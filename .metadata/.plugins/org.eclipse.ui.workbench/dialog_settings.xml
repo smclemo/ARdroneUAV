@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib/ardrone_tool/Com"/>
+			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Common"/>
+			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK/VP_Api"/>
+			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK/VP_Os"/>
+			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib/ardrone_tool/UI"/>
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="252" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
 </section>

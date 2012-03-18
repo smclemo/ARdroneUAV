@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="66" y="24">
+<window height="1000" width="1394" x="66" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -14,10 +14,12 @@
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="82" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="216" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -33,23 +35,27 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="UAV.cpp" partName="UAV.cpp" path="/home/steven/ARdroneUAV/UAV/src/UAV.cpp" title="UAV.cpp" tooltip="UAV/src/UAV.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/UAV/src/UAV.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="325" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="OpenCVTesting.cpp" partName="OpenCVTesting.cpp" path="/home/steven/ARdroneUAV/OpenCVTesting/src/OpenCVTesting.cpp" title="OpenCVTesting.cpp" tooltip="OpenCVTesting/src/OpenCVTesting.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenCVTesting/src/OpenCVTesting.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2656" selectionTopPixel="794"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Targets"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (2 items)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="380" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="496"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -62,7 +68,7 @@
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="442" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
@@ -111,43 +117,30 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@6a346239" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6a346239" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6599064" ratioLeft="423" ratioRight="218" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="bottomRight" ratio="0.6599064" ratioLeft="423" ratioRight="218" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.49921995" ratioLeft="320" ratioRight="321" relationship="4" relative="topLeft">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="bottomLeft" ratio="0.49921995" ratioLeft="320" ratioRight="321" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -199,14 +192,19 @@
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
-<fastViewBars/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
@@ -228,12 +226,13 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.75" ratioLeft="480" ratioRight="160" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.64182425" ratioLeft="577" ratioRight="322" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -242,14 +241,11 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Targets"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<info folder="true" part="topRight" ratio="0.76363635" ratioLeft="924" ratioRight="286" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -259,16 +255,173 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/UAV/src/UAV.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/helisimple/main/heli.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/helisimple/gui/CGui.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Navigation/Build/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Navigation/Build/readme.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Navigation/Sources/common/mobile_config.c"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/usr/include/linux/joystick.h" project="Navigation"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Navigation/Sources/common/common.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Navigation/Sources/UI/gamepad.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Navigation/Sources/UI/gamepad.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Navigation/Build/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/sdk_demo/Build/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/rl_codebase/application/Sources/UI/planner.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/rl_codebase/application/Sources/UI/gamepad.h~"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/rl_codebase/application/Build/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/rl_codebase/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/rl_codebase/Build/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenCVTesting/src/OpenCVTesting.cpp"/>
 </editors>
-<item historyLabel="UAV.cpp" index="0">
+<item historyLabel="CGui.h" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="UAV.cpp" index="0">
-<position info="not_deleted" x="324" y="0"/>
+<item historyLabel="heli.cpp" index="0">
+<position info="not_deleted" x="255" y="0"/>
 </item>
-<item active="true" historyLabel="UAV.cpp" index="0">
-<position info="not_deleted" x="323" y="0"/>
+<item historyLabel="Makefile" index="2">
+<position info="not_deleted" x="259" y="8"/>
+</item>
+<item historyLabel="readme.txt" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Makefile" index="2">
+<position info="not_deleted" x="3726" y="0"/>
+</item>
+<item historyLabel="mobile_config.c" index="4">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="readme.txt" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="mobile_config.c" index="4">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="Makefile" index="2">
+<position info="not_deleted" x="3726" y="0"/>
+</item>
+<item historyLabel="Makefile" index="2">
+<position info="not_deleted" x="5397" y="124"/>
+</item>
+<item historyLabel="Makefile" index="2">
+<position info="not_deleted" x="3546" y="0"/>
+</item>
+<item historyLabel="mobile_config.c" index="4">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="joystick.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="mobile_config.c" index="4">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="common.h" index="6">
+<position info="not_deleted" x="194" y="0"/>
+</item>
+<item historyLabel="mobile_config.c" index="4">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="Makefile" index="2">
+<position info="not_deleted" x="3546" y="0"/>
+</item>
+<item historyLabel="gamepad.c" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="gamepad.c" index="7">
+<position info="not_deleted" x="1120" y="0"/>
+</item>
+<item historyLabel="gamepad.c" index="7">
+<position info="not_deleted" x="1201" y="0"/>
+</item>
+<item historyLabel="gamepad.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="gamepad.c" index="7">
+<position info="not_deleted" x="2844" y="0"/>
+</item>
+<item historyLabel="Makefile" index="9">
+<position info="not_deleted" x="113" y="0"/>
+</item>
+<item historyLabel="Makefile" index="10">
+<position info="not_deleted" x="1795" y="0"/>
+</item>
+<item historyLabel="planner.cpp" index="11">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="gamepad.h~" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="planner.cpp" index="11">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="Makefile" index="13">
+<position info="not_deleted" x="161" y="0"/>
+</item>
+<item historyLabel="Makefile" index="14">
+<position info="not_deleted" x="266" y="0"/>
+</item>
+<item historyLabel="Makefile" index="15">
+<position info="not_deleted" x="25" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="1667" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="1302" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="1584" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="1468" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="99" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="815" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="777" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="405" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="654" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="712" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="199" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="179" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="2114" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="2095" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="388" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="622" y="0"/>
+</item>
+<item historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="666" y="0"/>
+</item>
+<item active="true" historyLabel="OpenCVTesting.cpp" index="16">
+<position info="not_deleted" x="3085" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -276,6 +429,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="topRight"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -283,13 +439,51 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.intro.impl.presentations.IntroLaunchBar"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UAV.cpp" tooltip="UAV/src/UAV.cpp">
-<persistable path="/UAV/src/UAV.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="OpenCVTesting.cpp" tooltip="OpenCVTesting/src/OpenCVTesting.cpp">
+<persistable path="/OpenCVTesting/src/OpenCVTesting.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="rl_codebase/Build/Makefile">
+<persistable path="/rl_codebase/Build/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="sdk_demo/Build/Makefile">
+<persistable path="/sdk_demo/Build/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gamepad.h" tooltip="Navigation/Sources/UI/gamepad.h">
+<persistable path="/Navigation/Sources/UI/gamepad.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gamepad.c" tooltip="Navigation/Sources/UI/gamepad.c">
+<persistable path="/Navigation/Sources/UI/gamepad.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="common.h" tooltip="Navigation/Sources/common/common.h">
+<persistable path="/Navigation/Sources/common/common.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="joystick.h" tooltip="/usr/include/linux/joystick.h">
+<persistable path="/usr/include/linux/joystick.h" project="Navigation"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mobile_config.c" tooltip="Navigation/Sources/common/mobile_config.c">
+<persistable path="/Navigation/Sources/common/mobile_config.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="readme.txt" tooltip="Navigation/Build/readme.txt">
+<persistable path="/Navigation/Build/readme.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="Navigation/Build/Makefile">
+<persistable path="/Navigation/Build/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CRecognition.h" tooltip="helisimple/imageproc/CRecognition.h">
+<persistable path="/helisimple/imageproc/CRecognition.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CRecognition.cpp" tooltip="helisimple/imageproc/CRecognition.cpp">
+<persistable path="/helisimple/imageproc/CRecognition.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="at_cmds.cpp" tooltip="helisimple/control/at_cmds.cpp">
+<persistable path="/helisimple/control/at_cmds.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="navdata.cpp" tooltip="helisimple/control/navdata.cpp">
+<persistable path="/helisimple/control/navdata.cpp"/>
 </file>
 </mruList>
 </workbench>

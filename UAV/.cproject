@@ -24,27 +24,32 @@
 <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2053466555" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
 <option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1675114422" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 <option id="gnu.cpp.compiler.exe.debug.option.debugging.level.867093153" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
-<option id="gnu.cpp.compiler.option.include.paths.1067513564" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-<listOptionValue builtIn="false" value="/usr/local/include"/>
-<listOptionValue builtIn="false" value="/usr/local/include/opencv"/>
+<option id="gnu.cpp.compiler.option.include.paths.1067513564" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Common"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK"/>
 </option>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.590480486" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1042773365" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.124894389" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 <option id="gnu.c.compiler.exe.debug.option.debugging.level.1567442218" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
-<option id="gnu.c.compiler.option.include.paths.1381499171" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-<listOptionValue builtIn="false" value="/usr/local/include"/>
-<listOptionValue builtIn="false" value="/usr/local/include/opencv"/>
+<option id="gnu.c.compiler.option.include.paths.1381499171" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Common"/>
 </option>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.534462572" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1211875722" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
 <tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.650621208" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
-<option id="gnu.cpp.link.option.paths.1399384463" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+<option id="gnu.cpp.link.option.paths.1399384463" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 <listOptionValue builtIn="false" value="/usr/local/lib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib"/>
 </option>
-<option id="gnu.cpp.link.option.libs.1604939803" superClass="gnu.cpp.link.option.libs" valueType="libs">
+<option id="gnu.cpp.link.option.libs.1604939803" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 <listOptionValue builtIn="false" value="opencv_core"/>
 <listOptionValue builtIn="false" value="opencv_highgui"/>
 </option>
@@ -54,12 +59,18 @@
 </inputType>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.178871878" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
+<option id="gnu.both.asm.option.include.paths.1112261710" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Common"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib"/>
+</option>
 <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1297648645" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 </tool>
 </toolChain>
 </folderInfo>
 <sourceEntries>
-<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+<entry excluding="UAV.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 </sourceEntries>
 </configuration>
 </storageModule>
@@ -314,6 +325,7 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 <cconfiguration id="cdt.managedbuild.config.gnu.exe.release.2139184057">
 <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.2139184057" moduleId="org.eclipse.cdt.core.settings" name="Release">
@@ -336,11 +348,23 @@
 <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1051548170" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release">
 <option id="gnu.cpp.compiler.exe.release.option.optimization.level.1714470577" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 <option id="gnu.cpp.compiler.exe.release.option.debugging.level.2061172333" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+<option id="gnu.cpp.compiler.option.include.paths.2136152029" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Common"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK"/>
+</option>
 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1346448657" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.630882395" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
 <option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.815258670" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
 <option id="gnu.c.compiler.exe.release.option.debugging.level.2087792595" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+<option id="gnu.c.compiler.option.include.paths.1216404976" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK"/>
+<listOptionValue builtIn="false" value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Common"/>
+</option>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1643902442" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.1555762316" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release"/>
@@ -356,7 +380,7 @@
 </toolChain>
 </folderInfo>
 <sourceEntries>
-<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+<entry excluding="UAV.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 </sourceEntries>
 </configuration>
 </storageModule>
@@ -611,6 +635,7 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">

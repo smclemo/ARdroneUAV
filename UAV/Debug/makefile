@@ -10,6 +10,9 @@ RM := rm -rf
 -include sources.mk
 -include subdir.mk
 -include src/subdir.mk
+-include src/Video/subdir.mk
+-include src/UI/subdir.mk
+-include src/Navdata/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -44,7 +47,7 @@ all: UAV
 UAV: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/usr/local/lib -o"UAV" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/usr/local/lib -L/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib -o"UAV" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
