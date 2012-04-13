@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos
+END
+default_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/default_config.h
+END
+vp_os_signal_dep.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/vp_os_signal_dep.h
+END
+vp_os_signal.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/vp_os_signal.c
+END
+vp_os_delay.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/vp_os_delay.c
+END
+intrin.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/intrin.h
+END
+vp_os_serial.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/vp_os_serial.h
+END
+vp_os_thread_dep.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/vp_os_thread_dep.h
+END
+vp_os_thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Os/parrotos/vp_os_thread.c
+END

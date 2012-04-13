@@ -1,0 +1,48 @@
+//
+// Prefix header for all source files of the 'FreeFlight' target in the 'FreeFlight' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#define LOGS_UPDATER
+
+#define FTP_ADDRESS				@"ftp://%@:%d/%@"
+#define FTP_PORT				5551
+
+#define SEND_BUFFER_SIZE		32768
+
+#define ERROR_NO_ERROR				0
+#define ERROR_BATTERY_LOW			1
+#define ERROR_CANNOT_CONNECT_TO_TOY	2
+#define ERROR_WIFI_NOT_REACHABLED	3
+
+#define FTP_MAX_RETRIES	5
+#define TIME_BEFORE_LAUNCH	5 // in s
+
+#define NORMAL_COLOR	[UIColor colorWithRed:217.0/255.0 green:242.0/255.0 blue:255.0/255.0 alpha:1.0]
+#define FAIL_COLOR		[UIColor colorWithRed:255.0/255.0 green:217.0/255.0 blue:217.0/255.0 alpha:1.0]
+#define PASS_COLOR		[UIColor colorWithRed:230.0/255.0 green:255.0/255.0 blue:217.0/255.0 alpha:1.0]
+#define PROBLEM_COLOR	[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:217.0/255.0 alpha:1.0]
+
+#define SCREEN_W		480
+#define SCREEN_H		320
+
+#define LINE_H			 22
+#define STATUS_LINE_NR	  2
+#define STEP_LINE_NR	  6
+#define INDICATOR_S		 10
+
+#define OFFSET_Y		(SCREEN_H - (STATUS_LINE_NR + STEP_LINE_NR + 3) * LINE_H)
+#define IMG_H			(OFFSET_Y - LINE_H)
+#define STATUS_Y		(OFFSET_Y + LINE_H)
+#define STEP_LINE_Y		(STATUS_Y + LINE_H * STATUS_LINE_NR + LINE_H)
+#define INDICATOR_M		((LINE_H - INDICATOR_S) / 2)

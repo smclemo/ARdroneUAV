@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/Navdata
+END
+navdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/Navdata/navdata.c
+END
+navdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/Navdata/navdata.h
+END

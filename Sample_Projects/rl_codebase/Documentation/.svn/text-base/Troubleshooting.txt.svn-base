@@ -1,0 +1,39 @@
+Joystick/Gamepad does not work:
+   
+   The software is probably set up to read from a different joystick.
+   To get a list of joysticks on the system type 'ls /dev/input/' into
+   a terminal.  Joysticks will be named 'js0', 'js1', and so on.  Some
+   laptops' accelorometers/accessories appear as joysticks, so which
+   one is the game pad may be unclear.  To test a gamepad, install
+   jstest ('sudo apt-get install joystick'), and run it ('jstest
+   /dev/input/js#', where # is the # of the joystick, exit using
+   Ctrl-C).  Once you have found out which joystick is the correct
+   one, modify 'gamepad.h' at the line: '#define GAMEPAD_OS_ID "js0"'
+   for your proper joystick id, and recompile.
+
+
+Cannot Connect to Drone:
+
+   The Drones are programmed to pair with one computer at a time.  If
+   the drone is not paired with your computer, then it will not assign
+   your computer the proper IP address.  To unpair the drone, power up
+   the drone, and press the unpair button on the bottom.  Once the
+   lights begin flashing, connect your computer's wifi to the drone,
+   which will pair your computer to the drone and it should work
+   properly now.  Instructional video for repairing:
+   http://www.youtube.com/watch?v=4-8awOd6tL4
+
+   
+Undefined reference to _main or cannot find -lpc_ardrone?
+
+  The AR.Drone API has not been compiled, to compile the API, Navigate
+  to ARDrone_API/ARDroneLib/Soft/Build and run 'make'.
+
+   
+Help! I'm stuck!
+
+  1) Carefully read ../Quickstart.txt - It has a lot of information
+     crammed into it.
+  2) Look though the files in 'Documentation'.
+  3) Read the Comments in ./application/Sources/UI/planner.cpp
+  4) If your still stuck, contact Cooper Bills <csb88@cornell.edu>

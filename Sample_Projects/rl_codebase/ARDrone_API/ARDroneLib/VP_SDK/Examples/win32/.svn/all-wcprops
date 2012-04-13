@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Examples/win32
+END
+mjpeg_encoder.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Examples/win32/mjpeg_encoder.c
+END
+mjpeg_decoder.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Examples/win32/mjpeg_decoder.c
+END
+api_ifile_raw_sdl.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Examples/win32/api_ifile_raw_sdl.c
+END

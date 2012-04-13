@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Stages
+END
+vlib_stage_encode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Stages/vlib_stage_encode.h
+END
+vlib_stage_decode.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Stages/vlib_stage_decode.c
+END
+vlib_stage_decode.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Stages/vlib_stage_decode.h
+END
+vlib_stage_encode.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Stages/vlib_stage_encode.c
+END

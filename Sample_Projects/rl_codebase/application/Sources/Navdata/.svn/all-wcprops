@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repos/rl_codebase/!svn/ver/3/application/Sources/Navdata
+END
+navdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/rl_codebase/!svn/ver/2/application/Sources/Navdata/navdata.c
+END
+NavDataContainer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/3/application/Sources/Navdata/NavDataContainer.cpp
+END
+navdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Navdata/navdata.h
+END
+NavDataContainer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/3/application/Sources/Navdata/NavDataContainer.hpp
+END

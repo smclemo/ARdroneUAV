@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build
+END
+elinux.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/elinux.makefile
+END
+parrotOS_codec.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/parrotOS_codec.makefile
+END
+lib.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/lib.makefile
+END
+parrotOS_drivers.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/parrotOS_drivers.makefile
+END
+libplf.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/libplf.makefile
+END
+generic.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/generic.makefile
+END
+app.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/app.makefile
+END
+sdk.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/sdk.makefile
+END
+parrotOS_core.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/parrotOS_core.makefile
+END
+sysvar.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/sysvar.makefile
+END
+common.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/common.makefile
+END
+parrotOS_utils.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/parrotOS_utils.makefile
+END
+varcontrol.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/varcontrol.makefile
+END
+parrotOS_devs.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/parrotOS_devs.makefile
+END
+vlib.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/vlib.makefile
+END
+do.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/do.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/Build/Makefile
+END

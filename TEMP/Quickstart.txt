@@ -1,0 +1,77 @@
+Cooper's Instructions <csb88@cornell.edu>
+
+*Note: this file is a quick start and contains nearly everything you
+ need to know crammed into a page or two.  Read it carefully.  Further
+ help can be found in ./Documentation.
+
+Overview:
+  For most applications, only the planner.cpp file needs to be edited.
+
+  The Parrot AR.Drone is a quadrotor with on-board controller.  It was
+  originally designed to be controlled using the accelerometers in an
+  iPhone (see http://ardrone.parrot.com/ for details).  It uses a wifi
+  ad-hoc connection to communicate with the iPhone, or in our case a
+  computer.  So, you must have your computer's wifi connected to the
+  drone before running the program.
+
+Quick Tips/Descriptions:
+  ./ARDrone_API - the API for the ARDrone
+  ./application - our application/code, derived from their linux example
+  ./application/Build - where to build/run our application
+  ./application/Sources - our source code
+  http://projects.ardrone.org - support/documentation website
+  
+On ubuntu, the command 'sudo apt-get install g++ libsdl-dev libfftw3-dev libiw-dev libhighgui-dev'
+should install everything you need for dependencies (including opencv!).
+  
+To Build:
+  1. Navigate to ./application/Build in a terminal
+  2. run the command 'make'
+  3. the last command displayed starts with 'cp' if all goes well.
+  
+  Undefined reference to _main or cannot find -lpc_ardrone?
+    Navigate to ./ARDrone_API/ARDroneLib/Soft/Build and run 'make'
+  
+To Run:
+  1. Connect your wifi to ardrone_###### (drone must be on).
+  2. Once connected, in the Build directory, run './linux_sdk_demo'
+  
+To Use: 
+  Currently, it is only configured to work with the joystick/360
+  gamepad.  See ./Documentation/360-Controls.jpg for control
+  configuration.
+  
+  'Toggle Algorithms' switches between manual flight and computer
+  controlled flight (coded in ./application/Sources/UI/planner.cpp).
+  This should be the only existing file you should need to edit.
+
+To add new source files to make:
+  1. Open 'Makefile'
+  2. add your source to the list under 'GENERIC_BINARIES_COMMON_SOURCE_FILES'
+  3. headers do not need to be added to the makefile.
+  
+Known Dependencies (there might be more):
+  libhighgui-dev
+  g++
+  libsdl-dev
+  libfftw3-dev
+  libiw-dev
+  
+Adding libraries/dependencies:
+  1. Open 'Makefile'
+  2. add your library to 'GENERIC_LIBS', with -l prefex.
+  
+Missing a dependency?
+  1. open System->Administration->Synaptic Package Manager
+  2. Search for the dependency
+      Note: install the 'dev' version of the libraries.  
+      i.e. for opencv/highgui: 'libhighgui-dev' is the desired package
+  3. Right-click -> Mark for installation.
+  4. Click apply on the top.
+  5. Watch Ubuntu Download and handle the dirty work.
+  6. Try compiling again.
+  
+Any more questions? 
+  Check the Documentation folder for more, otherwise
+  feel free to e-mail me: csb88@cornell.edu
+

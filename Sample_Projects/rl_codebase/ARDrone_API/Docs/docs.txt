@@ -1,0 +1,1 @@
+I did not commit the documentation to the SVN repository.  You can get support at https://projects.ardrone.org/

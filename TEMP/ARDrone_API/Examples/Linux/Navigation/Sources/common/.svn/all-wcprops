@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/common
+END
+main_raw_capture.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/common/main_raw_capture.c
+END
+mobile_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/common/mobile_config.h
+END
+mobile_wifi.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/common/mobile_wifi.c
+END
+mobile_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/common/mobile_main.c
+END
+mobile_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/common/mobile_config.c
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/common/common.h
+END

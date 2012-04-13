@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB
+END
+video_dct.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_dct.c
+END
+video_picture.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_picture.c
+END
+video_macroblock.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_macroblock.c
+END
+video_gob.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_gob.h
+END
+video_codec.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_codec.c
+END
+video_picture_defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_picture_defines.h
+END
+video_dct.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_dct.h
+END
+video_picture.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_picture.h
+END
+video_macroblock.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_macroblock.h
+END
+video_codec.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_codec.h
+END
+video_quantizer.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_quantizer.c
+END
+video_mem32.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_mem32.c
+END
+video_controller.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_controller.c
+END
+video_huffman.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_huffman.c
+END
+video_quantizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_quantizer.h
+END
+video_controller.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_controller.h
+END
+video_mem32.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_mem32.h
+END
+video_huffman.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_huffman.h
+END
+video_packetizer.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_packetizer.c
+END
+video_packetizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/video_packetizer.h
+END

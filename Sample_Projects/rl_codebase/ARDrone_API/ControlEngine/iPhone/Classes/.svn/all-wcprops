@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes
+END
+control_ack.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/control_ack.c
+END
+video_stage.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/video_stage.h
+END
+wifi.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/wifi.c
+END
+control_cfg.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/control_cfg.c
+END
+control_ack.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/control_ack.h
+END
+wifi.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/wifi.h
+END
+ARDrone.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/ARDrone.m
+END
+control_cfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/control_cfg.h
+END
+opengl_stage.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/opengl_stage.c
+END
+ConstantsAndMacros.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/ConstantsAndMacros.h
+END
+ControlData.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/ControlData.c
+END
+mobile_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/mobile_main.c
+END
+opengl_stage.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/opengl_stage.h
+END
+ControlData.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/ControlData.h
+END
+OpenGLSprite.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/OpenGLSprite.h
+END
+OpenGLVideo.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/OpenGLVideo.h
+END
+mobile_main.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/mobile_main.h
+END
+OpenGLVideo.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/OpenGLVideo.m
+END
+OpenGLSprite.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/OpenGLSprite.m
+END
+InternalProtocols.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/InternalProtocols.h
+END
+video_stage.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ControlEngine/iPhone/Classes/video_stage.c
+END

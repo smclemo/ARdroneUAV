@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm
+END
+ihm.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/ihm.h
+END
+ihm_vision.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/ihm_vision.c
+END
+view_drone_attitude.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/view_drone_attitude.c
+END
+ihm_stages_o_gtk.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/ihm_stages_o_gtk.c
+END
+ihm_vision.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/ihm_vision.h
+END
+view_drone_attitude.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/view_drone_attitude.h
+END
+ihm_stages_o_gtk.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/ihm_stages_o_gtk.h
+END
+ihm.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/ihm/ihm.c
+END

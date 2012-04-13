@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com
+END
+vp_com_socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_socket.h
+END
+vp_com_error.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_error.h
+END
+vp_com_wired.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_wired.h
+END
+vp_com_wifi.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_wifi.h
+END
+vp_com_serial.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_serial.h
+END
+vp_com.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com.h
+END
+vp_com_socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_socket.c
+END
+vp_com_socket_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_socket_utils.c
+END
+vp_com_error.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_error.c
+END
+vp_com_bluetooth.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/vp_com_bluetooth.h
+END

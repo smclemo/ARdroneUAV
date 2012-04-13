@@ -4,11 +4,11 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application"/>
+			<item value="/home/steven/ARdroneUAV/Sample_Projects/rl_codebase"/>
+			<item value="/home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Sources"/>
 			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib/ardrone_tool/Com"/>
 			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Common"/>
-			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK/VP_Api"/>
-			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/VP_SDK/VP_Os"/>
-			<item value="/home/steven/workspace/ARDrone_SDK_1_8/ARDroneLib/Soft/Lib/ardrone_tool/UI"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">

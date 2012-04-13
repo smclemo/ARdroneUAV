@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9_P6/UVLC
+END
+uvlc_p6.S
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9_P6/UVLC/uvlc_p6.S
+END
+uvlc_p6.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9_P6/UVLC/uvlc_p6.h
+END
+uvlc_mb_layer_p6.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9_P6/UVLC/uvlc_mb_layer_p6.c
+END
+uvlc_mb_layer_p6.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9_P6/UVLC/uvlc_mb_layer_p6.h
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/UI
+END
+gamepad.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/UI/gamepad.c
+END
+ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/UI/ui.h
+END
+gamepad.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/UI/gamepad.h
+END
+ui.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/UI/ui.c
+END

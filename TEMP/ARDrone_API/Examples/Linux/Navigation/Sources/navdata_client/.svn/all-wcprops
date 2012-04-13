@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client
+END
+navdata_tablepilotage.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_tablepilotage.h
+END
+navdata_ihm.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_ihm.h
+END
+navdata_client.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_client.h
+END
+navdata_polaris.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_polaris.c
+END
+navdata_tablepilotage.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_tablepilotage.c
+END
+navdata_ihm.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_ihm.c
+END
+navdata_client.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_client.c
+END
+navdata_polaris.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/navdata_polaris.h
+END
+raw_capture.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/navdata_client/raw_capture.c
+END

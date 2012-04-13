@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2514C27210084DB100A42282 /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2514C26E10084DB100A42282 /* ES1Renderer.m */; };
+		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
+		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		68738EBB10C6B986001F305B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68738EBA10C6B986001F305B /* main.m */; };
+		687676A51088A85500D2CB24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687676A41088A85500D2CB24 /* CoreGraphics.framework */; };
+		8A61C73410DFF11300E0C8E6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A61C73310DFF11300E0C8E6 /* MediaPlayer.framework */; };
+		8A885F62112005B800314ADB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A885F61112005B800314ADB /* AudioToolbox.framework */; };
+		8AB5D82111E61C2B00218BA0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB5D82011E61C2B00218BA0 /* MainWindow.xib */; };
+		8AB5DA7711E70F2E00218BA0 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5DA7411E70F2E00218BA0 /* MenuController.m */; };
+		8AB5DACF11E713BE00218BA0 /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB5DACD11E713BE00218BA0 /* MenuController.xib */; };
+		8AC5D2A611E4AD7200AD2C00 /* accelero_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D28B11E4AD7200AD2C00 /* accelero_thumb.png */; };
+		8AC5D2A711E4AD7200AD2C00 /* ARDrone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D28C11E4AD7200AD2C00 /* ARDrone.png */; };
+		8AC5D2A811E4AD7200AD2C00 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D28D11E4AD7200AD2C00 /* back.png */; };
+		8AC5D2A911E4AD7200AD2C00 /* battery0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D28E11E4AD7200AD2C00 /* battery0.png */; };
+		8AC5D2AA11E4AD7200AD2C00 /* battery1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D28F11E4AD7200AD2C00 /* battery1.png */; };
+		8AC5D2AB11E4AD7200AD2C00 /* battery2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29011E4AD7200AD2C00 /* battery2.png */; };
+		8AC5D2AC11E4AD7200AD2C00 /* battery3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29111E4AD7200AD2C00 /* battery3.png */; };
+		8AC5D2AD11E4AD7200AD2C00 /* default_old.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29211E4AD7200AD2C00 /* default_old.jpg */; };
+		8AC5D2AE11E4AD7200AD2C00 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29311E4AD7200AD2C00 /* default.jpg */; };
+		8AC5D2AF11E4AD7200AD2C00 /* emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29411E4AD7200AD2C00 /* emergency.png */; };
+		8AC5D2B011E4AD7200AD2C00 /* finger_print.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29511E4AD7200AD2C00 /* finger_print.png */; };
+		8AC5D2B111E4AD7200AD2C00 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29611E4AD7200AD2C00 /* fire.png */; };
+		8AC5D2B211E4AD7200AD2C00 /* HUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29711E4AD7200AD2C00 /* HUD.xib */; };
+		8AC5D2B311E4AD7200AD2C00 /* joystick_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29811E4AD7200AD2C00 /* joystick_background.png */; };
+		8AC5D2B411E4AD7200AD2C00 /* joystick_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29911E4AD7200AD2C00 /* joystick_thumb.png */; };
+		8AC5D2B511E4AD7200AD2C00 /* level.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29A11E4AD7200AD2C00 /* level.png */; };
+		8AC5D2B611E4AD7200AD2C00 /* others.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29B11E4AD7200AD2C00 /* others.png */; };
+		8AC5D2B711E4AD7200AD2C00 /* plop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29C11E4AD7200AD2C00 /* plop.wav */; };
+		8AC5D2B811E4AD7200AD2C00 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29D11E4AD7200AD2C00 /* reset.png */; };
+		8AC5D2B911E4AD7200AD2C00 /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29E11E4AD7200AD2C00 /* screen.png */; };
+		8AC5D2BA11E4AD7200AD2C00 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D29F11E4AD7200AD2C00 /* settings.png */; };
+		8AC5D2BB11E4AD7200AD2C00 /* SettingsMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D2A011E4AD7200AD2C00 /* SettingsMenu.xib */; };
+		8AC5D2BC11E4AD7200AD2C00 /* SettingsMenuDebug.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D2A111E4AD7200AD2C00 /* SettingsMenuDebug.xib */; };
+		8AC5D2BD11E4AD7200AD2C00 /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D2A211E4AD7200AD2C00 /* switch.png */; };
+		8AC5D2BE11E4AD7200AD2C00 /* take_land.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D2A311E4AD7200AD2C00 /* take_land.png */; };
+		8AC5D2BF11E4AD7200AD2C00 /* take_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D2A411E4AD7200AD2C00 /* take_off.png */; };
+		8AC5D2C011E4AD7200AD2C00 /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D2A511E4AD7200AD2C00 /* wifi.png */; };
+		8AC5D2C311E4AD8000AD2C00 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D2C111E4AD8000AD2C00 /* Icon.png */; };
+		8AC5D3BB11E4C57600AD2C00 /* wifi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AC5D3B911E4C57600AD2C00 /* wifi.c */; };
+		8AC5D3C611E4C59B00AD2C00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC5D3C511E4C59B00AD2C00 /* CFNetwork.framework */; };
+		8AC5D4EB11E4CD2300AD2C00 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4DA11E4CD2200AD2C00 /* BG.png */; };
+		8AC5D4EC11E4CD2300AD2C00 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4DB11E4CD2200AD2C00 /* Button.png */; };
+		8AC5D4EE11E4CD2300AD2C00 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4DD11E4CD2200AD2C00 /* Empty.png */; };
+		8AC5D4EF11E4CD2300AD2C00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4DE11E4CD2200AD2C00 /* Localizable.strings */; };
+		8AC5D4F011E4CD2300AD2C00 /* Fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4E011E4CD2200AD2C00 /* Fail.png */; };
+		8AC5D4F111E4CD2300AD2C00 /* ardrone_update.plf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4E211E4CD2300AD2C00 /* ardrone_update.plf */; };
+		8AC5D4F211E4CD2300AD2C00 /* Firmware.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4E311E4CD2300AD2C00 /* Firmware.plist */; };
+		8AC5D4F311E4CD2300AD2C00 /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4E511E4CD2300AD2C00 /* Header.png */; };
+		8AC5D4F611E4CD2300AD2C00 /* Pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4E811E4CD2300AD2C00 /* Pass.png */; };
+		8AC5D4F711E4CD2300AD2C00 /* Problem.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D4EA11E4CD2300AD2C00 /* Problem.png */; };
+		8AC5D50311E4CDEE00AD2C00 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D50211E4CDEE00AD2C00 /* Default.png */; };
+		8AC5D57B11E4DB7000AD2C00 /* MenuUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC5D57A11E4DB7000AD2C00 /* MenuUpdater.m */; };
+		8AC5D58211E4DBB200AD2C00 /* plf.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AC5D58011E4DBB200AD2C00 /* plf.c */; };
+		8AC5D64C11E5AEE200AD2C00 /* MenuUpdater.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D64B11E5AEE200AD2C00 /* MenuUpdater.xib */; };
+		8AE557E81175BE7300BD4A7E /* libARDroneEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE557E71175BE7300BD4A7E /* libARDroneEngine.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2514C26D10084DB100A42282 /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
+		2514C26E10084DB100A42282 /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
+		2514C27110084DB100A42282 /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		28FD14FD0DC6FC130079059D /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		68738EB610C6B948001F305B /* FreeFlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeFlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68738EB810C6B95E001F305B /* ARDrone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDrone.h; path = ../../../ControlEngine/iPhone/Release/ARDrone.h; sourceTree = SOURCE_ROOT; };
+		68738EB910C6B95E001F305B /* ARDroneProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDroneProtocols.h; path = ../../../ControlEngine/iPhone/Release/ARDroneProtocols.h; sourceTree = SOURCE_ROOT; };
+		68738EBA10C6B986001F305B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/main.m; sourceTree = "<group>"; };
+		687676A41088A85500D2CB24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68B6223210DA8E3100298CC1 /* FreeFlight_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeFlight_Prefix.pch; sourceTree = "<group>"; };
+		8A61C73310DFF11300E0C8E6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8A885F61112005B800314ADB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8AB5D7F211E61A6F00218BA0 /* FreeFlight-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FreeFlight-Info.plist"; sourceTree = "<group>"; };
+		8AB5D82011E61C2B00218BA0 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		8AB5DA7311E70F2E00218BA0 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		8AB5DA7411E70F2E00218BA0 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+		8AB5DACD11E713BE00218BA0 /* MenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuController.xib; sourceTree = "<group>"; };
+		8AC5D28B11E4AD7200AD2C00 /* accelero_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = accelero_thumb.png; path = ../../../ControlEngine/iPhone/Release/Ressources/accelero_thumb.png; sourceTree = SOURCE_ROOT; };
+		8AC5D28C11E4AD7200AD2C00 /* ARDrone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ARDrone.png; path = ../../../ControlEngine/iPhone/Release/Ressources/ARDrone.png; sourceTree = SOURCE_ROOT; };
+		8AC5D28D11E4AD7200AD2C00 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../ControlEngine/iPhone/Release/Ressources/back.png; sourceTree = SOURCE_ROOT; };
+		8AC5D28E11E4AD7200AD2C00 /* battery0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery0.png; path = ../../../ControlEngine/iPhone/Release/Ressources/battery0.png; sourceTree = SOURCE_ROOT; };
+		8AC5D28F11E4AD7200AD2C00 /* battery1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery1.png; path = ../../../ControlEngine/iPhone/Release/Ressources/battery1.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29011E4AD7200AD2C00 /* battery2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery2.png; path = ../../../ControlEngine/iPhone/Release/Ressources/battery2.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29111E4AD7200AD2C00 /* battery3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery3.png; path = ../../../ControlEngine/iPhone/Release/Ressources/battery3.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29211E4AD7200AD2C00 /* default_old.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default_old.jpg; path = ../../../ControlEngine/iPhone/Release/Ressources/default_old.jpg; sourceTree = SOURCE_ROOT; };
+		8AC5D29311E4AD7200AD2C00 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default.jpg; path = ../../../ControlEngine/iPhone/Release/Ressources/default.jpg; sourceTree = SOURCE_ROOT; };
+		8AC5D29411E4AD7200AD2C00 /* emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emergency.png; path = ../../../ControlEngine/iPhone/Release/Ressources/emergency.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29511E4AD7200AD2C00 /* finger_print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finger_print.png; path = ../../../ControlEngine/iPhone/Release/Ressources/finger_print.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29611E4AD7200AD2C00 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = ../../../ControlEngine/iPhone/Release/Ressources/fire.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29711E4AD7200AD2C00 /* HUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HUD.xib; path = ../../../ControlEngine/iPhone/Release/Ressources/HUD.xib; sourceTree = SOURCE_ROOT; };
+		8AC5D29811E4AD7200AD2C00 /* joystick_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joystick_background.png; path = ../../../ControlEngine/iPhone/Release/Ressources/joystick_background.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29911E4AD7200AD2C00 /* joystick_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joystick_thumb.png; path = ../../../ControlEngine/iPhone/Release/Ressources/joystick_thumb.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29A11E4AD7200AD2C00 /* level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = level.png; path = ../../../ControlEngine/iPhone/Release/Ressources/level.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29B11E4AD7200AD2C00 /* others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others.png; path = ../../../ControlEngine/iPhone/Release/Ressources/others.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29C11E4AD7200AD2C00 /* plop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = plop.wav; path = ../../../ControlEngine/iPhone/Release/Ressources/plop.wav; sourceTree = SOURCE_ROOT; };
+		8AC5D29D11E4AD7200AD2C00 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset.png; path = ../../../ControlEngine/iPhone/Release/Ressources/reset.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29E11E4AD7200AD2C00 /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screen.png; path = ../../../ControlEngine/iPhone/Release/Ressources/screen.png; sourceTree = SOURCE_ROOT; };
+		8AC5D29F11E4AD7200AD2C00 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../../ControlEngine/iPhone/Release/Ressources/settings.png; sourceTree = SOURCE_ROOT; };
+		8AC5D2A011E4AD7200AD2C00 /* SettingsMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsMenu.xib; path = ../../../ControlEngine/iPhone/Release/Ressources/SettingsMenu.xib; sourceTree = SOURCE_ROOT; };
+		8AC5D2A111E4AD7200AD2C00 /* SettingsMenuDebug.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsMenuDebug.xib; path = ../../../ControlEngine/iPhone/Release/Ressources/SettingsMenuDebug.xib; sourceTree = SOURCE_ROOT; };
+		8AC5D2A211E4AD7200AD2C00 /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch.png; path = ../../../ControlEngine/iPhone/Release/Ressources/switch.png; sourceTree = SOURCE_ROOT; };
+		8AC5D2A311E4AD7200AD2C00 /* take_land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = take_land.png; path = ../../../ControlEngine/iPhone/Release/Ressources/take_land.png; sourceTree = SOURCE_ROOT; };
+		8AC5D2A411E4AD7200AD2C00 /* take_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = take_off.png; path = ../../../ControlEngine/iPhone/Release/Ressources/take_off.png; sourceTree = SOURCE_ROOT; };
+		8AC5D2A511E4AD7200AD2C00 /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wifi.png; path = ../../../ControlEngine/iPhone/Release/Ressources/wifi.png; sourceTree = SOURCE_ROOT; };
+		8AC5D2C111E4AD8000AD2C00 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8AC5D3B911E4C57600AD2C00 /* wifi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wifi.c; path = ../../../ControlEngine/iPhone/Classes/wifi.c; sourceTree = SOURCE_ROOT; };
+		8AC5D3BA11E4C57600AD2C00 /* wifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wifi.h; path = ../../../ControlEngine/iPhone/Classes/wifi.h; sourceTree = SOURCE_ROOT; };
+		8AC5D3C511E4C59B00AD2C00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8AC5D4DA11E4CD2200AD2C00 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		8AC5D4DB11E4CD2200AD2C00 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		8AC5D4DD11E4CD2200AD2C00 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Empty.png; sourceTree = "<group>"; };
+		8AC5D4DF11E4CD2200AD2C00 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8AC5D4E011E4CD2200AD2C00 /* Fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fail.png; sourceTree = "<group>"; };
+		8AC5D4E211E4CD2300AD2C00 /* ardrone_update.plf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ardrone_update.plf; sourceTree = "<group>"; };
+		8AC5D4E311E4CD2300AD2C00 /* Firmware.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Firmware.plist; sourceTree = "<group>"; };
+		8AC5D4E511E4CD2300AD2C00 /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = "<group>"; };
+		8AC5D4E811E4CD2300AD2C00 /* Pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pass.png; sourceTree = "<group>"; };
+		8AC5D4EA11E4CD2300AD2C00 /* Problem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Problem.png; sourceTree = "<group>"; };
+		8AC5D50211E4CDEE00AD2C00 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8AC5D57911E4DB7000AD2C00 /* MenuUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuUpdater.h; sourceTree = "<group>"; };
+		8AC5D57A11E4DB7000AD2C00 /* MenuUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuUpdater.m; sourceTree = "<group>"; };
+		8AC5D58011E4DBB200AD2C00 /* plf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plf.c; sourceTree = "<group>"; };
+		8AC5D58111E4DBB200AD2C00 /* plf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plf.h; sourceTree = "<group>"; };
+		8AC5D64B11E5AEE200AD2C00 /* MenuUpdater.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuUpdater.xib; sourceTree = "<group>"; };
+		8AE557E71175BE7300BD4A7E /* libARDroneEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARDroneEngine.a; path = ../../../ControlEngine/iPhone/Release/libARDroneEngine.a; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
+				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
+				687676A51088A85500D2CB24 /* CoreGraphics.framework in Frameworks */,
+				8A61C73410DFF11300E0C8E6 /* MediaPlayer.framework in Frameworks */,
+				8A885F62112005B800314ADB /* AudioToolbox.framework in Frameworks */,
+				8AE557E81175BE7300BD4A7E /* libARDroneEngine.a in Frameworks */,
+				8AC5D3C611E4C59B00AD2C00 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5D58011E4DBB200AD2C00 /* plf.c */,
+				8AC5D58111E4DBB200AD2C00 /* plf.h */,
+				8AC5D3B911E4C57600AD2C00 /* wifi.c */,
+				8AC5D3BA11E4C57600AD2C00 /* wifi.h */,
+				8AC5D2C711E4AD9000AD2C00 /* Menus */,
+				2514C26D10084DB100A42282 /* ES1Renderer.h */,
+				2514C26E10084DB100A42282 /* ES1Renderer.m */,
+				2514C27110084DB100A42282 /* ESRenderer.h */,
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				28FD14FD0DC6FC130079059D /* EAGLView.m */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68738EB610C6B948001F305B /* FreeFlight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				8AB5D7F211E61A6F00218BA0 /* FreeFlight-Info.plist */,
+				68738E9510C6B8F1001F305B /* Ressources */,
+				680BC65D10984A4700F941F4 /* Headers */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				68B6223210DA8E3100298CC1 /* FreeFlight_Prefix.pch */,
+				68738EBA10C6B986001F305B /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AE557E71175BE7300BD4A7E /* libARDroneEngine.a */,
+				8A885F61112005B800314ADB /* AudioToolbox.framework */,
+				687676A41088A85500D2CB24 /* CoreGraphics.framework */,
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				8A61C73310DFF11300E0C8E6 /* MediaPlayer.framework */,
+				8AC5D3C511E4C59B00AD2C00 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		680BC65D10984A4700F941F4 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				68738EB810C6B95E001F305B /* ARDrone.h */,
+				68738EB910C6B95E001F305B /* ARDroneProtocols.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		68738E9510C6B8F1001F305B /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5D4D911E4CD2200AD2C00 /* Updater */,
+				8AC5D27C11E4AD4F00AD2C00 /* ARDroneEngine */,
+				8AC5D27711E4AD4500AD2C00 /* Interfaces */,
+				8AB5D82011E61C2B00218BA0 /* MainWindow.xib */,
+				8AC5D2C111E4AD8000AD2C00 /* Icon.png */,
+				8AC5D50211E4CDEE00AD2C00 /* Default.png */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		8AC5D27711E4AD4500AD2C00 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				8AB5DACD11E713BE00218BA0 /* MenuController.xib */,
+				8AC5D64B11E5AEE200AD2C00 /* MenuUpdater.xib */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		8AC5D27C11E4AD4F00AD2C00 /* ARDroneEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5D28B11E4AD7200AD2C00 /* accelero_thumb.png */,
+				8AC5D28C11E4AD7200AD2C00 /* ARDrone.png */,
+				8AC5D28D11E4AD7200AD2C00 /* back.png */,
+				8AC5D28E11E4AD7200AD2C00 /* battery0.png */,
+				8AC5D28F11E4AD7200AD2C00 /* battery1.png */,
+				8AC5D29011E4AD7200AD2C00 /* battery2.png */,
+				8AC5D29111E4AD7200AD2C00 /* battery3.png */,
+				8AC5D29211E4AD7200AD2C00 /* default_old.jpg */,
+				8AC5D29311E4AD7200AD2C00 /* default.jpg */,
+				8AC5D29411E4AD7200AD2C00 /* emergency.png */,
+				8AC5D29511E4AD7200AD2C00 /* finger_print.png */,
+				8AC5D29611E4AD7200AD2C00 /* fire.png */,
+				8AC5D29711E4AD7200AD2C00 /* HUD.xib */,
+				8AC5D29811E4AD7200AD2C00 /* joystick_background.png */,
+				8AC5D29911E4AD7200AD2C00 /* joystick_thumb.png */,
+				8AC5D29A11E4AD7200AD2C00 /* level.png */,
+				8AC5D29C11E4AD7200AD2C00 /* plop.wav */,
+				8AC5D29B11E4AD7200AD2C00 /* others.png */,
+				8AC5D29D11E4AD7200AD2C00 /* reset.png */,
+				8AC5D29E11E4AD7200AD2C00 /* screen.png */,
+				8AC5D29F11E4AD7200AD2C00 /* settings.png */,
+				8AC5D2A011E4AD7200AD2C00 /* SettingsMenu.xib */,
+				8AC5D2A111E4AD7200AD2C00 /* SettingsMenuDebug.xib */,
+				8AC5D2A211E4AD7200AD2C00 /* switch.png */,
+				8AC5D2A311E4AD7200AD2C00 /* take_land.png */,
+				8AC5D2A411E4AD7200AD2C00 /* take_off.png */,
+				8AC5D2A511E4AD7200AD2C00 /* wifi.png */,
+			);
+			name = ARDroneEngine;
+			sourceTree = "<group>";
+		};
+		8AC5D2C711E4AD9000AD2C00 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				8AB5DA7311E70F2E00218BA0 /* MenuController.h */,
+				8AB5DA7411E70F2E00218BA0 /* MenuController.m */,
+				8AC5D57911E4DB7000AD2C00 /* MenuUpdater.h */,
+				8AC5D57A11E4DB7000AD2C00 /* MenuUpdater.m */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+		8AC5D4D911E4CD2200AD2C00 /* Updater */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5D4DE11E4CD2200AD2C00 /* Localizable.strings */,
+				8AC5D4DA11E4CD2200AD2C00 /* BG.png */,
+				8AC5D4DB11E4CD2200AD2C00 /* Button.png */,
+				8AC5D4DD11E4CD2200AD2C00 /* Empty.png */,
+				8AC5D4E011E4CD2200AD2C00 /* Fail.png */,
+				8AC5D4E111E4CD2200AD2C00 /* Firmware */,
+				8AC5D4E511E4CD2300AD2C00 /* Header.png */,
+				8AC5D4E811E4CD2300AD2C00 /* Pass.png */,
+				8AC5D4EA11E4CD2300AD2C00 /* Problem.png */,
+			);
+			path = Updater;
+			sourceTree = "<group>";
+		};
+		8AC5D4E111E4CD2200AD2C00 /* Firmware */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5D4E211E4CD2300AD2C00 /* ardrone_update.plf */,
+				8AC5D4E311E4CD2300AD2C00 /* Firmware.plist */,
+			);
+			path = Firmware;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* FreeFlight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FreeFlight" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeFlight;
+			productName = FreeFlight;
+			productReference = 68738EB610C6B948001F305B /* FreeFlight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FreeFlight" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				fr,
+				pl,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* FreeFlight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC5D2A611E4AD7200AD2C00 /* accelero_thumb.png in Resources */,
+				8AC5D2A711E4AD7200AD2C00 /* ARDrone.png in Resources */,
+				8AC5D2A811E4AD7200AD2C00 /* back.png in Resources */,
+				8AC5D2A911E4AD7200AD2C00 /* battery0.png in Resources */,
+				8AC5D2AA11E4AD7200AD2C00 /* battery1.png in Resources */,
+				8AC5D2AB11E4AD7200AD2C00 /* battery2.png in Resources */,
+				8AC5D2AC11E4AD7200AD2C00 /* battery3.png in Resources */,
+				8AC5D2AD11E4AD7200AD2C00 /* default_old.jpg in Resources */,
+				8AC5D2AE11E4AD7200AD2C00 /* default.jpg in Resources */,
+				8AC5D2AF11E4AD7200AD2C00 /* emergency.png in Resources */,
+				8AC5D2B011E4AD7200AD2C00 /* finger_print.png in Resources */,
+				8AC5D2B111E4AD7200AD2C00 /* fire.png in Resources */,
+				8AC5D2B211E4AD7200AD2C00 /* HUD.xib in Resources */,
+				8AC5D2B311E4AD7200AD2C00 /* joystick_background.png in Resources */,
+				8AC5D2B411E4AD7200AD2C00 /* joystick_thumb.png in Resources */,
+				8AC5D2B511E4AD7200AD2C00 /* level.png in Resources */,
+				8AC5D2B611E4AD7200AD2C00 /* others.png in Resources */,
+				8AC5D2B711E4AD7200AD2C00 /* plop.wav in Resources */,
+				8AC5D2B811E4AD7200AD2C00 /* reset.png in Resources */,
+				8AC5D2B911E4AD7200AD2C00 /* screen.png in Resources */,
+				8AC5D2BA11E4AD7200AD2C00 /* settings.png in Resources */,
+				8AC5D2BB11E4AD7200AD2C00 /* SettingsMenu.xib in Resources */,
+				8AC5D2BC11E4AD7200AD2C00 /* SettingsMenuDebug.xib in Resources */,
+				8AC5D2BD11E4AD7200AD2C00 /* switch.png in Resources */,
+				8AC5D2BE11E4AD7200AD2C00 /* take_land.png in Resources */,
+				8AC5D2BF11E4AD7200AD2C00 /* take_off.png in Resources */,
+				8AC5D2C011E4AD7200AD2C00 /* wifi.png in Resources */,
+				8AC5D2C311E4AD8000AD2C00 /* Icon.png in Resources */,
+				8AC5D4EB11E4CD2300AD2C00 /* BG.png in Resources */,
+				8AC5D4EC11E4CD2300AD2C00 /* Button.png in Resources */,
+				8AC5D4EE11E4CD2300AD2C00 /* Empty.png in Resources */,
+				8AC5D4EF11E4CD2300AD2C00 /* Localizable.strings in Resources */,
+				8AC5D4F011E4CD2300AD2C00 /* Fail.png in Resources */,
+				8AC5D4F111E4CD2300AD2C00 /* ardrone_update.plf in Resources */,
+				8AC5D4F211E4CD2300AD2C00 /* Firmware.plist in Resources */,
+				8AC5D4F311E4CD2300AD2C00 /* Header.png in Resources */,
+				8AC5D4F611E4CD2300AD2C00 /* Pass.png in Resources */,
+				8AC5D4F711E4CD2300AD2C00 /* Problem.png in Resources */,
+				8AC5D50311E4CDEE00AD2C00 /* Default.png in Resources */,
+				8AC5D64C11E5AEE200AD2C00 /* MenuUpdater.xib in Resources */,
+				8AB5D82111E61C2B00218BA0 /* MainWindow.xib in Resources */,
+				8AB5DACF11E713BE00218BA0 /* MenuController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */,
+				2514C27210084DB100A42282 /* ES1Renderer.m in Sources */,
+				68738EBB10C6B986001F305B /* main.m in Sources */,
+				8AC5D3BB11E4C57600AD2C00 /* wifi.c in Sources */,
+				8AC5D57B11E4DB7000AD2C00 /* MenuUpdater.m in Sources */,
+				8AC5D58211E4DBB200AD2C00 /* plf.c in Sources */,
+				8AB5DA7711E70F2E00218BA0 /* MenuController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AC5D4DE11E4CD2200AD2C00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AC5D4DF11E4CD2200AD2C00 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* ARM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FreeFlight_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "FreeFlight-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"../../../ControlEngine/iPhone/$(CONFIGURATION_BUILD_DIR)\"",
+					"\"$(SRCROOT)/../../../ControlEngine/iPhone/Release\"",
+				);
+				OTHER_LDFLAGS = "-lARDroneEngine";
+				PRODUCT_NAME = FreeFlight;
+			};
+			name = "ARM-debug";
+		};
+		1D6058950D05DD3E006BFB54 /* ARM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = Release;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FreeFlight_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "FreeFlight-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../ControlEngine/iPhone/Release\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = FreeFlight;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+			};
+			name = "ARM-release";
+		};
+		8A39027B1118A86E0072E747 /* SIM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = "SIM-debug";
+		};
+		8A39027C1118A86E0072E747 /* SIM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FreeFlight_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "FreeFlight-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../../../ControlEngine/iPhone/$(CONFIGURATION_BUILD_DIR)",
+					"\"$(SRCROOT)/../../../ControlEngine/iPhone/Release\"",
+				);
+				OTHER_LDFLAGS = "-lARDroneEngine";
+				PRODUCT_NAME = FreeFlight;
+			};
+			name = "SIM-debug";
+		};
+		8A39027D1118A8810072E747 /* SIM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = "SIM-release";
+		};
+		8A39027E1118A8810072E747 /* SIM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FreeFlight_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "FreeFlight-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../../../ControlEngine/iPhone/$(CONFIGURATION_BUILD_DIR)",
+					"\"$(SRCROOT)/../../../ControlEngine/iPhone/Release\"",
+				);
+				OTHER_LDFLAGS = "-lARDroneEngine";
+				PRODUCT_NAME = FreeFlight;
+			};
+			name = "SIM-release";
+		};
+		8A9FD4B811A1988F008F631A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Distribution;
+		};
+		8A9FD4B911A1988F008F631A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parrot";
+				CONFIGURATION_BUILD_DIR = Release;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FreeFlight_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "FreeFlight-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../ControlEngine/iPhone/Release\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = FreeFlight;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9BF4E559-A91A-4A07-8A6B-16EA8EBA6475";
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* ARM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "ARM-debug";
+		};
+		C01FCF5008A954540054247B /* ARM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.0;
+			};
+			name = "ARM-release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FreeFlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* ARM-debug */,
+				1D6058950D05DD3E006BFB54 /* ARM-release */,
+				8A9FD4B911A1988F008F631A /* Distribution */,
+				8A39027C1118A86E0072E747 /* SIM-debug */,
+				8A39027E1118A8810072E747 /* SIM-release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "ARM-release";
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FreeFlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* ARM-debug */,
+				C01FCF5008A954540054247B /* ARM-release */,
+				8A9FD4B811A1988F008F631A /* Distribution */,
+				8A39027B1118A86E0072E747 /* SIM-debug */,
+				8A39027D1118A8810072E747 /* SIM-release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "ARM-release";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

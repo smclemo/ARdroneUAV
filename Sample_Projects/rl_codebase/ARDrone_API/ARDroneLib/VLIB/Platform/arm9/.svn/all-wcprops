@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9
+END
+video_utils_p5p.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_utils_p5p.h
+END
+video_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_config.h
+END
+video_packetizer_p5p.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_packetizer_p5p.h
+END
+video_quantizer_p5p.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_quantizer_p5p.h
+END
+video_dct_p5p.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_dct_p5p.c
+END
+video_picture_p5p.S
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_picture_p5p.S
+END
+video_gen_sad.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_gen_sad.c
+END
+video_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_utils.c
+END
+video_dct_p5p.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_dct_p5p.h
+END
+video_gen_sad.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_gen_sad.h
+END
+video_packetizer_p5p.S
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_packetizer_p5p.S
+END
+video_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_utils.h
+END
+video_quantizer_p5p.S
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/Platform/arm9/video_quantizer_p5p.S
+END

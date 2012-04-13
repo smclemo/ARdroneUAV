@@ -1,0 +1,48 @@
+Symbols:
+☐ - blank checkbox
+❍ - indicator
+✓ - pass
+✗ - fail
+
+Start → 1❍
+
+1. Connecting:
+- AR.Drone connected → (1✓) 2☐
+- AR.Drone error → 1✗
+- AR.Drone error disappeared → 1❍
+
+2. Checking version:
+- app version later than AR.Drone firmware → (2✓) 3a☐
+- app version the same as AR.Drone firmware → 2✗
+- app version older than AR.Drone firmware → 2✗
+- AR.Drone error → (2☐) 1✗
+
+3a. Sending file (button displayed, waiting for press by user):
+- button pressed → 3b❍
+- AR.Drone error → (2☐,3☐) 1✗
+
+3b. Sending file (progress bar displayed):
+- finished successfully → (3✓) 4❍
+- sending error → 3a✗
+- AR.Drone error → (2☐,3☐) 1✗
+
+4. Installing:
+- instal successful → (4✓) 5a☐
+- instal fail → 4✗
+- AR.Drone error → (2☐,3☐,4☐) 1✗
+
+5a. Restarting AR.Drone (waiting for disconnect by user):
+- AR.Drone connection error → 5b☐
+- AR.Drone other error → 5a✗
+- AR.Drone other error disappeared → 5a☐
+
+5b. Restarting AR.Drone (waiting for reconnect):
+- AR.Drone connected → (5✓) 6☐
+- AR.Drone connection error → 5b☐
+- AR.Drone connection error disappeared → 5b❍
+- AR.Drone other error → 5b✗
+- AR.Drone other error disappeared → 5b☐
+
+6. Checking again:
+- app version the same as AR.Drone firmware → 6✓
+- app version other than AR.Drone firmware → 6✗

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/repos/rl_codebase/!svn/ver/6/application/Build
+END
+config.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/rl_codebase/!svn/ver/1/application/Build/config.makefile
+END
+custom.makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/rl_codebase/!svn/ver/1/application/Build/custom.makefile
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/repos/rl_codebase/!svn/ver/6/application/Build/Makefile
+END

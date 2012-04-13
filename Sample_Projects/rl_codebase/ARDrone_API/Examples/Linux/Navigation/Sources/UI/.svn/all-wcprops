@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/UI
+END
+gamepad.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/UI/gamepad.c
+END
+ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/UI/ui.h
+END
+wiimote.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/UI/wiimote.h
+END
+gamepad.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/UI/gamepad.h
+END
+ui.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/UI/ui.c
+END
+wiimote.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/Navigation/Sources/UI/wiimote.c
+END

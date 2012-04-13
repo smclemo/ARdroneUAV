@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Com
+END
+config_wifi.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_wifi.c
+END
+config_serial.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_serial.c
+END
+config_com.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_com.h
+END
+config_wifi.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_wifi.h
+END
+config_serial.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_serial.h
+END

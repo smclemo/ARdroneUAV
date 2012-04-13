@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni
+END
+navdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/navdata.c
+END
+android.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/android.c
+END
+app.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/app.c
+END
+vlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/vlib.h
+END
+default.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/default.c
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/Android.mk
+END
+app.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/app.h
+END
+video.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/video.c
+END
+at_cmds.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/at_cmds.c
+END
+stream.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/stream.c
+END
+vlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Android/ardrone/project/jni/vlib.c
+END

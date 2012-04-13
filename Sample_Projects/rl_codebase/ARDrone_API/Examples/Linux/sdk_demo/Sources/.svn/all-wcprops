@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources
+END
+ardrone_testing_tool.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/ardrone_testing_tool.c
+END
+ardrone_testing_tool.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/Examples/Linux/sdk_demo/Sources/ardrone_testing_tool.h
+END

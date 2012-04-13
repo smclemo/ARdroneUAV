@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/repos/rl_codebase/!svn/ver/9/application/Sources/UI
+END
+gamepad.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/rl_codebase/!svn/ver/9/application/Sources/UI/gamepad.cpp
+END
+planner.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/rl_codebase/!svn/ver/7/application/Sources/UI/planner.cpp
+END
+keyboard.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repos/rl_codebase/!svn/ver/9/application/Sources/UI/keyboard.cpp
+END
+terminalinput.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/UI/terminalinput.hpp
+END
+ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/UI/ui.h
+END
+gamepad.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/rl_codebase/!svn/ver/8/application/Sources/UI/gamepad.h
+END
+planner.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/repos/rl_codebase/!svn/ver/6/application/Sources/UI/planner.hpp
+END
+keyboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/rl_codebase/!svn/ver/6/application/Sources/UI/keyboard.h
+END
+ui.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/UI/ui.c
+END

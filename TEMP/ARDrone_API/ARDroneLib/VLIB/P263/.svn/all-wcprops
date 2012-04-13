@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263
+END
+p263_huffman.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_huffman.c
+END
+p263_layers.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_layers.h
+END
+p263_picture_layer.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_picture_layer.c
+END
+p263_huffman.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_huffman.h
+END
+p263_mb_layer.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_mb_layer.c
+END
+p263_codec.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_codec.c
+END
+p263_codec.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_codec.h
+END
+p263_gob_layer.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VLIB/P263/p263_gob_layer.c
+END

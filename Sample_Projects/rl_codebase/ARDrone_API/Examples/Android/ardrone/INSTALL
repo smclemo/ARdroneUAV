@@ -1,0 +1,24 @@
+1) Install Android SDK and NDK
+------------------------------
+- download Android SDK base package:
+http://developer.android.com/sdk/index.html
+- untar SDK in $HOME/android
+- export PATH=${PATH}:$HOME/android/android-sdk-linux_86/tools
+- apt-get install ant
+- run 'android'
+  * download SDK 2.1 & 1.6
+  * create AVD "myphone" for SDK 1.6
+- download Android NDK 1.6 package, unzip in $HOME/android
+- from NDK directory, run 'build/host-setup.sh --no-awk-check'
+
+2) Build application
+--------------------
+- move 'ardrone' directory to <NDK>/apps directory
+- from NDK directory, run 'make APP=ardrone' to build native lib
+- from <NDK>/apps/ardrone/project, run 'ant debug' or 'ant release'
+- application package is now in <NDK>/apps/ardrone/project/bin directory
+
+3) Install application on Android phone
+---------------------------------------
+  * connect phone via USB
+  * adb -d install -r <NDK>/apps/ardrone/project/bin/DemoActivity-debug.apk

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools
+END
+smoothingmedianfilter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools/smoothingmedianfilter.hpp
+END
+medianfilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools/medianfilter.cpp
+END
+coopertools.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools/coopertools.cpp
+END
+cvpointtools.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools/cvpointtools.hpp
+END
+medianfilter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools/medianfilter.hpp
+END
+smoothingmedianfilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools/smoothingmedianfilter.cpp
+END
+coopertools.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repos/rl_codebase/!svn/ver/1/application/Sources/Tools/coopertools.hpp
+END

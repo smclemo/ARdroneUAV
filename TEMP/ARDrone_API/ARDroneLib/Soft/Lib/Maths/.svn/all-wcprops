@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths
+END
+time.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/time.c
+END
+matrix3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/matrix3d.h
+END
+vision_math.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/vision_math.c
+END
+maths.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/maths.h
+END
+time.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/time.h
+END
+filter.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/filter.c
+END
+point3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/point3d.h
+END
+vision_math.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/vision_math.h
+END
+matrices.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/matrices.c
+END
+filter.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/filter.h
+END
+matrix3d.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/matrix3d.c
+END
+maths.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/maths.c
+END
+matrices.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/Maths/matrices.h
+END

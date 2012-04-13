@@ -1,0 +1,7 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS :=
+
+LIBS := -lsdk -lpc_ardrone -lopencv_highgui -lopencv_imgproc -lvlib -lopencv_core

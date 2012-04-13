@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api
+END
+vp_api_stage.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_stage.c
+END
+vp_api_io_multi_stage.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_io_multi_stage.c
+END
+vp_api_thread_helper.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_thread_helper.c
+END
+vp_api_stage.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_stage.h
+END
+vp_api_io_multi_stage.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_io_multi_stage.h
+END
+vp_api_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_config.h
+END
+vp_api_thread_helper.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_thread_helper.h
+END
+vp_api_picture.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_picture.h
+END
+vp_api.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api.c
+END
+vp_api_supervisor.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_supervisor.c
+END
+vp_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api.h
+END
+vp_api_supervisor.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_supervisor.h
+END
+vp_api_error.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_error.c
+END
+vp_api_error.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_error.h
+END
+vp_api_io_stage_selector.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Api/vp_api_io_stage_selector.h
+END

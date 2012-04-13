@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control
+END
+ardrone_control.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h
+END
+ardrone_control_configuration.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.c
+END
+ardrone_control_configuration.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h
+END
+ardrone_control_soft_update.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_soft_update.c
+END
+ardrone_control_ack.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.c
+END
+ardrone_navdata_control.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.c
+END
+ardrone_control.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.c
+END
+ardrone_control_soft_update.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_soft_update.h
+END
+ardrone_control_ack.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h
+END
+ardrone_navdata_control.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h
+END

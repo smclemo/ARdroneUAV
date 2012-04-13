@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F77C00111A68B450031B1FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F77BFFF11A68B450031B1FB /* Default.png */; };
+		0F77C00211A68B450031B1FB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F77C00011A68B450031B1FB /* Icon.png */; };
+		0F77C1B611A6C7EA0031B1FB /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F77C1B511A6C7EA0031B1FB /* BG.png */; };
+		0F7E52AD11A547D1005F6050 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		0F7E52AE11A547D1005F6050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		0F7E52AF11A547D1005F6050 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7E518E11A53CC5005F6050 /* CFNetwork.framework */; };
+		0F7E52BA11A547DE005F6050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E520B11A54168005F6050 /* main.m */; };
+		0F7E52BC11A54819005F6050 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F7E521011A54179005F6050 /* MainWindow.xib */; };
+		0F7FB77C11AD5E0A005B78E4 /* ardrone_update.plf in Resources */ = {isa = PBXBuildFile; fileRef = 0F7FB77B11AD5E0A005B78E4 /* ardrone_update.plf */; };
+		0F7FB78311AD5F63005B78E4 /* Firmware.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F7FB78211AD5F63005B78E4 /* Firmware.plist */; };
+		0F811A9A11B649400071AE55 /* ARUpdaterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F811A9711B649400071AE55 /* ARUpdaterAppDelegate.m */; };
+		0F811A9B11B649400071AE55 /* ARUpdaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F811A9911B649400071AE55 /* ARUpdaterViewController.m */; };
+		0F811BCF11B692320071AE55 /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F811BCE11B692320071AE55 /* Header.png */; };
+		0F841EE611B90E38003AC739 /* Problem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F841EE511B90E38003AC739 /* Problem.png */; };
+		0F843EF211AEAFEA00594E75 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F843EEF11AEAFEA00594E75 /* Button.png */; };
+		0F843EF311AEAFEA00594E75 /* Fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F843EF011AEAFEA00594E75 /* Fail.png */; };
+		0F843EF411AEAFEA00594E75 /* Pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F843EF111AEAFEA00594E75 /* Pass.png */; };
+		0F87F92711B3B0840063FD54 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F87F92611B3B0840063FD54 /* Empty.png */; };
+		0F87F98311B3BB590063FD54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F87F97E11B3BB590063FD54 /* Localizable.strings */; };
+		8AC5D10011E3825800AD2C00 /* plf.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AC5D0FF11E3825800AD2C00 /* plf.c */; };
+		E1CEA9AA11DB891000B42227 /* wifi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A21773811D0EEE0008518BF /* wifi.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F77BFFF11A68B450031B1FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Ressources/Default.png; sourceTree = "<group>"; };
+		0F77C00011A68B450031B1FB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Ressources/Icon.png; sourceTree = "<group>"; };
+		0F77C1B511A6C7EA0031B1FB /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = Ressources/BG.png; sourceTree = "<group>"; };
+		0F7E518E11A53CC5005F6050 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0F7E520B11A54168005F6050 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F7E521011A54179005F6050 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Ressources/MainWindow.xib; sourceTree = "<group>"; };
+		0F7E523711A54332005F6050 /* AR.Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AR.Updater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F7FB77B11AD5E0A005B78E4 /* ardrone_update.plf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ardrone_update.plf; path = Ressources/ardrone_update.plf; sourceTree = "<group>"; };
+		0F7FB78211AD5F63005B78E4 /* Firmware.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firmware.plist; path = Ressources/Firmware.plist; sourceTree = "<group>"; };
+		0F811A9611B649400071AE55 /* ARUpdaterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUpdaterAppDelegate.h; path = Classes/ARUpdaterAppDelegate.h; sourceTree = "<group>"; };
+		0F811A9711B649400071AE55 /* ARUpdaterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUpdaterAppDelegate.m; path = Classes/ARUpdaterAppDelegate.m; sourceTree = "<group>"; };
+		0F811A9811B649400071AE55 /* ARUpdaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUpdaterViewController.h; path = Classes/ARUpdaterViewController.h; sourceTree = "<group>"; };
+		0F811A9911B649400071AE55 /* ARUpdaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUpdaterViewController.m; path = Classes/ARUpdaterViewController.m; sourceTree = "<group>"; };
+		0F811A9C11B649550071AE55 /* ARUpdater_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARUpdater_Prefix.pch; sourceTree = "<group>"; };
+		0F811A9D11B6496A0071AE55 /* ARUpdater-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ARUpdater-Info.plist"; sourceTree = "<group>"; };
+		0F811BCE11B692320071AE55 /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Header.png; path = Ressources/Header.png; sourceTree = "<group>"; };
+		0F841EE511B90E38003AC739 /* Problem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Problem.png; path = Ressources/Problem.png; sourceTree = "<group>"; };
+		0F843EEF11AEAFEA00594E75 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = Ressources/Button.png; sourceTree = "<group>"; };
+		0F843EF011AEAFEA00594E75 /* Fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fail.png; path = Ressources/Fail.png; sourceTree = "<group>"; };
+		0F843EF111AEAFEA00594E75 /* Pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pass.png; path = Ressources/Pass.png; sourceTree = "<group>"; };
+		0F87F92611B3B0840063FD54 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = Ressources/Empty.png; sourceTree = "<group>"; };
+		0F87FA4D11B3E7760063FD54 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Ressources/fr.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		0F87FA4E11B3E7820063FD54 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = Ressources/pl.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		0F87FAC111B3EAB80063FD54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Ressources/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A21773811D0EEE0008518BF /* wifi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wifi.c; path = ARDroneEngine/wifi.c; sourceTree = "<group>"; };
+		8A21773911D0EEE0008518BF /* wifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wifi.h; path = ARDroneEngine/wifi.h; sourceTree = "<group>"; };
+		8AC5D0FE11E3825800AD2C00 /* plf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plf.h; path = ARDroneEngine/plf.h; sourceTree = "<group>"; };
+		8AC5D0FF11E3825800AD2C00 /* plf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = plf.c; path = ARDroneEngine/plf.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F7E523511A54332005F6050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7E52AD11A547D1005F6050 /* UIKit.framework in Frameworks */,
+				0F7E52AE11A547D1005F6050 /* Foundation.framework in Frameworks */,
+				0F7E52AF11A547D1005F6050 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F7E513811A53C60005F6050 /* ARDroneEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8A21773811D0EEE0008518BF /* wifi.c */,
+				8A21773911D0EEE0008518BF /* wifi.h */,
+				8AC5D0FE11E3825800AD2C00 /* plf.h */,
+				8AC5D0FF11E3825800AD2C00 /* plf.c */,
+			);
+			name = ARDroneEngine;
+			sourceTree = "<group>";
+		};
+		0F7E51A211A53CDF005F6050 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0F811A9C11B649550071AE55 /* ARUpdater_Prefix.pch */,
+				0F7E520B11A54168005F6050 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		0F7E51A511A53CDF005F6050 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F7FB77B11AD5E0A005B78E4 /* ardrone_update.plf */,
+				0F7FB78211AD5F63005B78E4 /* Firmware.plist */,
+				0F87F97E11B3BB590063FD54 /* Localizable.strings */,
+				0F843EEF11AEAFEA00594E75 /* Button.png */,
+				0F843EF011AEAFEA00594E75 /* Fail.png */,
+				0F841EE511B90E38003AC739 /* Problem.png */,
+				0F843EF111AEAFEA00594E75 /* Pass.png */,
+				0F87F92611B3B0840063FD54 /* Empty.png */,
+				0F811BCE11B692320071AE55 /* Header.png */,
+				0F77C1B511A6C7EA0031B1FB /* BG.png */,
+				0F77BFFF11A68B450031B1FB /* Default.png */,
+				0F77C00011A68B450031B1FB /* Icon.png */,
+				0F7E521011A54179005F6050 /* MainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0F7E541511A56C5B005F6050 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0F811A9611B649400071AE55 /* ARUpdaterAppDelegate.h */,
+				0F811A9711B649400071AE55 /* ARUpdaterAppDelegate.m */,
+				0F811A9811B649400071AE55 /* ARUpdaterViewController.h */,
+				0F811A9911B649400071AE55 /* ARUpdaterViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F7E523711A54332005F6050 /* AR.Updater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				0F7E513811A53C60005F6050 /* ARDroneEngine */,
+				0F7E541511A56C5B005F6050 /* Classes */,
+				0F7E51A211A53CDF005F6050 /* Other Sources */,
+				0F7E51A511A53CDF005F6050 /* Resources */,
+				0F811A9D11B6496A0071AE55 /* ARUpdater-Info.plist */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F7E518E11A53CC5005F6050 /* CFNetwork.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F7E523611A54332005F6050 /* AR.Updater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F7E523E11A54333005F6050 /* Build configuration list for PBXNativeTarget "AR.Updater" */;
+			buildPhases = (
+				0F7E534F11A566E9005F6050 /* ShellScript */,
+				0F7E523311A54332005F6050 /* Resources */,
+				0F7E523411A54332005F6050 /* Sources */,
+				0F7E523511A54332005F6050 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AR.Updater;
+			productName = AR.Updater;
+			productReference = 0F7E523711A54332005F6050 /* AR.Updater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ARUpdater" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				fr,
+				pl,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F7E523611A54332005F6050 /* AR.Updater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F7E523311A54332005F6050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7E52BC11A54819005F6050 /* MainWindow.xib in Resources */,
+				0F77C00111A68B450031B1FB /* Default.png in Resources */,
+				0F77C00211A68B450031B1FB /* Icon.png in Resources */,
+				0F77C1B611A6C7EA0031B1FB /* BG.png in Resources */,
+				0F7FB77C11AD5E0A005B78E4 /* ardrone_update.plf in Resources */,
+				0F7FB78311AD5F63005B78E4 /* Firmware.plist in Resources */,
+				0F843EF211AEAFEA00594E75 /* Button.png in Resources */,
+				0F843EF311AEAFEA00594E75 /* Fail.png in Resources */,
+				0F843EF411AEAFEA00594E75 /* Pass.png in Resources */,
+				0F87F92711B3B0840063FD54 /* Empty.png in Resources */,
+				0F87F98311B3BB590063FD54 /* Localizable.strings in Resources */,
+				0F811BCF11B692320071AE55 /* Header.png in Resources */,
+				0F841EE611B90E38003AC739 /* Problem.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F7E534F11A566E9005F6050 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F7E523411A54332005F6050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7E52BA11A547DE005F6050 /* main.m in Sources */,
+				0F811A9A11B649400071AE55 /* ARUpdaterAppDelegate.m in Sources */,
+				0F811A9B11B649400071AE55 /* ARUpdaterViewController.m in Sources */,
+				E1CEA9AA11DB891000B42227 /* wifi.c in Sources */,
+				8AC5D10011E3825800AD2C00 /* plf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F87F97E11B3BB590063FD54 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F87FAC111B3EAB80063FD54 /* en */,
+				0F87FA4D11B3E7760063FD54 /* fr */,
+				0F87FA4E11B3E7820063FD54 /* pl */,
+			);
+			name = Localizable.strings;
+			path = Ressources/en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F7E523A11A54333005F6050 /* ARM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				PROVISIONING_PROFILE = "";
+			};
+			name = "ARM-debug";
+		};
+		0F7E523B11A54333005F6050 /* ARM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ARUpdater_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ARUpdater-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = AR.Updater;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = "ARM-release";
+		};
+		0F7E523C11A54333005F6050 /* SIM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ARUpdater_Prefix.pch;
+				INFOPLIST_FILE = "ARUpdater-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = AR.Updater;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = "SIM-debug";
+		};
+		0F7E523D11A54333005F6050 /* SIM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "ARUpdater-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AR.Updater;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = "SIM-release";
+		};
+		687B4E1C0F1666410094D61F /* ARM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ARUpdater_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../ARDroneLib,
+					../../../ARDroneLib/Soft/Common,
+					../../../ARDroneLib/Soft/Lib,
+					../../../ARDroneLib/VLIB,
+					../../../ARDroneLib/VLIB/Platform/arm11,
+					../../../ARDroneLib/VP_SDK,
+					../../../ARDroneLib/VP_SDK/VP_Com,
+					../../../ARDroneLib/VP_SDK/VP_Os,
+					../../../ARDroneLib/VP_SDK/VP_Os/linux,
+					../../../ARDroneLib/VP_SDK/VP_Com/linux,
+				);
+				INFOPLIST_FILE = "ARUpdater-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lpc_ardrone",
+					"-lsdk",
+					"-lvlib",
+				);
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = AR.Updater;
+				PROVISIONING_PROFILE = "2A1461ED-63B8-4D0B-B83F-38584FEA6AC5";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+				SDKROOT = iphoneos3.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VERSION_INFO_BUILDER = "$(USER)";
+				VERSION_INFO_FILE = "$(PRODUCT_NAME)_vers.c";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "ARM-debug";
+		};
+		687B4E1F0F1666610094D61F /* ARM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos3.0;
+			};
+			name = "ARM-release";
+		};
+		687B4E220F1667C00094D61F /* SIM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = "SIM-release";
+		};
+		8A21786B11D3996D008518BF /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parrot";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A519047-E7F0-4B80-8BBE-276728405268";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Distribution;
+		};
+		8A21786C11D3996D008518BF /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Parrot";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ARUpdater_Prefix.pch;
+				HEADER_SEARCH_PATHS = "../../../ARDroneLib/**";
+				INFOPLIST_FILE = "ARUpdater-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				OTHER_LDFLAGS = (
+					"-lpc_ardrone",
+					"-lsdk",
+					"-lvlib",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AR.Updater;
+				PROVISIONING_PROFILE = "87E97877-A07F-4408-B8D3-6C4AB5BE6613";
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* SIM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = "SIM-debug";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F7E523E11A54333005F6050 /* Build configuration list for PBXNativeTarget "AR.Updater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F7E523A11A54333005F6050 /* ARM-debug */,
+				0F7E523B11A54333005F6050 /* ARM-release */,
+				8A21786C11D3996D008518BF /* Distribution */,
+				0F7E523C11A54333005F6050 /* SIM-debug */,
+				0F7E523D11A54333005F6050 /* SIM-release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "ARM-debug";
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ARUpdater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687B4E1C0F1666410094D61F /* ARM-debug */,
+				687B4E1F0F1666610094D61F /* ARM-release */,
+				8A21786B11D3996D008518BF /* Distribution */,
+				C01FCF4F08A954540054247B /* SIM-debug */,
+				687B4E220F1667C00094D61F /* SIM-release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "ARM-debug";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

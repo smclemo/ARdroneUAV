@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux
+END
+vp_com_config_itf.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_config_itf.h
+END
+vp_com_wifi.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_wifi.c
+END
+vp_com_serial.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_serial.c
+END
+vp_com.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com.c
+END
+vp_com_interface.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_interface.c
+END
+vp_com_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_interface.h
+END
+vp_com_wlc.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_wlc.c
+END
+vp_com_config_itf.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_config_itf.c
+END
+vp_com_wired.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_wired.c
+END
+vp_com_wlc.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/repos/rl_codebase/!svn/ver/1/ARDrone_API/ARDroneLib/VP_SDK/VP_Com/elinux/vp_com_wlc.h
+END

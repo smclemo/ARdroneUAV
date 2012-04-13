@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680BC46F10983EC800F941F4 /* ARDroneProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 680BC46D10983EC800F941F4 /* ARDroneProtocols.h */; };
+		680BC47010983EC800F941F4 /* ARDrone.h in Headers */ = {isa = PBXBuildFile; fileRef = 680BC46E10983EC800F941F4 /* ARDrone.h */; };
+		680BC4C7109840E300F941F4 /* ARDroneEngine_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 680BC4C6109840E300F941F4 /* ARDroneEngine_Prefix.pch */; };
+		680C31351085BDB000C7D327 /* ARDrone.m in Sources */ = {isa = PBXBuildFile; fileRef = 680C31331085BDB000C7D327 /* ARDrone.m */; };
+		680C39401087202000C7D327 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		680C39F41087203700C7D327 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689B5A690FB9AD6C0095AB01 /* CoreGraphics.framework */; };
+		680C39F51087203700C7D327 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68704E230EADCF5900C45877 /* AudioToolbox.framework */; };
+		680C39F61087203700C7D327 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68704E240EADCF5900C45877 /* CoreAudio.framework */; };
+		680C39F71087203700C7D327 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		680C39F81087203700C7D327 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		680C39F91087203700C7D327 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		680C3AC510872B0300C7D327 /* ConstantsAndMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6899BF041083389200ED08CB /* ConstantsAndMacros.h */; };
+		68607EF310DB8D27009514CF /* GLViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 68607EEF10DB8D27009514CF /* GLViewController.h */; };
+		68607EF410DB8D27009514CF /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68607EF010DB8D27009514CF /* GLViewController.m */; };
+		68607EF510DB8D27009514CF /* MainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 68607EF110DB8D27009514CF /* MainViewController.h */; };
+		68607EF610DB8D27009514CF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68607EF210DB8D27009514CF /* MainViewController.m */; };
+		686A12EE10BBDE16003E176D /* InternalProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 686A12ED10BBDE16003E176D /* InternalProtocols.h */; };
+		6871D839115B5AD900CFEEC8 /* navdata.c in Sources */ = {isa = PBXBuildFile; fileRef = 6871D837115B5AD900CFEEC8 /* navdata.c */; };
+		6871D83A115B5AD900CFEEC8 /* navdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 6871D838115B5AD900CFEEC8 /* navdata.h */; };
+		6871D83F115B5B0800CFEEC8 /* mobile_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6871D83D115B5B0800CFEEC8 /* mobile_main.c */; };
+		6871D840115B5B0800CFEEC8 /* mobile_main.h in Headers */ = {isa = PBXBuildFile; fileRef = 6871D83E115B5B0800CFEEC8 /* mobile_main.h */; };
+		6871D848115B5B1F00CFEEC8 /* opengl_stage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6871D844115B5B1F00CFEEC8 /* opengl_stage.h */; };
+		6871D84F115B5B2F00CFEEC8 /* video_stage.c in Sources */ = {isa = PBXBuildFile; fileRef = 6871D84D115B5B2F00CFEEC8 /* video_stage.c */; };
+		6871D850115B5B2F00CFEEC8 /* video_stage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6871D84E115B5B2F00CFEEC8 /* video_stage.h */; };
+		6871D8C3115B5ED500CFEEC8 /* control_ack.c in Sources */ = {isa = PBXBuildFile; fileRef = 6871D8C2115B5ED500CFEEC8 /* control_ack.c */; };
+		6871DA3E115B82F800CFEEC8 /* control_ack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6871DA3D115B82F800CFEEC8 /* control_ack.h */; };
+		6871E7071164CDE500CFEEC8 /* opengl_stage.c in Sources */ = {isa = PBXBuildFile; fileRef = 6871D843115B5B1F00CFEEC8 /* opengl_stage.c */; };
+		6873906010C7B30F001F305B /* SettingsMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6873905E10C7B30F001F305B /* SettingsMenu.m */; };
+		6873906110C7B30F001F305B /* SettingsMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 6873905F10C7B30F001F305B /* SettingsMenu.h */; };
+		6873AACC10D1654E001F305B /* HUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 6873AACA10D1654E001F305B /* HUD.h */; };
+		6873AACD10D1654E001F305B /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6873AACB10D1654E001F305B /* HUD.m */; };
+		6899BF071083389200ED08CB /* OpenGLVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6899BEF81083389200ED08CB /* OpenGLVideo.m */; };
+		6899BF081083389200ED08CB /* OpenGLVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6899BEF91083389200ED08CB /* OpenGLVideo.h */; };
+		6899BF091083389200ED08CB /* OpenGLSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6899BEFA1083389200ED08CB /* OpenGLSprite.m */; };
+		6899BF0A1083389200ED08CB /* OpenGLSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6899BEFB1083389200ED08CB /* OpenGLSprite.h */; };
+		68E5679410E1193400EEB77F /* TVOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E5679210E1193400EEB77F /* TVOut.h */; };
+		68E5679510E1193400EEB77F /* TVOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E5679310E1193400EEB77F /* TVOut.m */; };
+		8A5D9BDA110473C600D4D1BC /* ControlData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5D9BD8110473C600D4D1BC /* ControlData.h */; };
+		8A5D9BDB110473C600D4D1BC /* ControlData.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D9BD9110473C600D4D1BC /* ControlData.c */; };
+		8A774EA611A683B500F76B86 /* ARDroneTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A774EA511A683B500F76B86 /* ARDroneTypes.h */; };
+		8AD90167119021D300EE9582 /* control_cfg.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD90165119021D300EE9582 /* control_cfg.h */; };
+		8AD90168119021D300EE9582 /* control_cfg.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AD90166119021D300EE9582 /* control_cfg.c */; };
+		8AD906BD1191A06100EE9582 /* wifi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD906BB1191A06100EE9582 /* wifi.h */; };
+		8AD906BE1191A06100EE9582 /* wifi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AD906BC1191A06100EE9582 /* wifi.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6871E05C1160B25D00CFEEC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 12;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		680BC46D10983EC800F941F4 /* ARDroneProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDroneProtocols.h; path = Release/ARDroneProtocols.h; sourceTree = "<group>"; };
+		680BC46E10983EC800F941F4 /* ARDrone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDrone.h; path = Release/ARDrone.h; sourceTree = "<group>"; };
+		680BC4C5109840DA00F941F4 /* libARDroneEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libARDroneEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		680BC4C6109840E300F941F4 /* ARDroneEngine_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDroneEngine_Prefix.pch; sourceTree = "<group>"; };
+		680C31331085BDB000C7D327 /* ARDrone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARDrone.m; path = Classes/ARDrone.m; sourceTree = "<group>"; };
+		68607EEF10DB8D27009514CF /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		68607EF010DB8D27009514CF /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		68607EF110DB8D27009514CF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		68607EF210DB8D27009514CF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		686A12ED10BBDE16003E176D /* InternalProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InternalProtocols.h; path = Classes/InternalProtocols.h; sourceTree = "<group>"; };
+		68704E230EADCF5900C45877 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		68704E240EADCF5900C45877 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6871D837115B5AD900CFEEC8 /* navdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = navdata.c; sourceTree = "<group>"; };
+		6871D838115B5AD900CFEEC8 /* navdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navdata.h; sourceTree = "<group>"; };
+		6871D83D115B5B0800CFEEC8 /* mobile_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mobile_main.c; path = Classes/mobile_main.c; sourceTree = "<group>"; };
+		6871D83E115B5B0800CFEEC8 /* mobile_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mobile_main.h; path = Classes/mobile_main.h; sourceTree = "<group>"; };
+		6871D843115B5B1F00CFEEC8 /* opengl_stage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = opengl_stage.c; path = Classes/opengl_stage.c; sourceTree = "<group>"; };
+		6871D844115B5B1F00CFEEC8 /* opengl_stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opengl_stage.h; path = Classes/opengl_stage.h; sourceTree = "<group>"; };
+		6871D84D115B5B2F00CFEEC8 /* video_stage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = video_stage.c; path = Classes/video_stage.c; sourceTree = "<group>"; };
+		6871D84E115B5B2F00CFEEC8 /* video_stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = video_stage.h; path = Classes/video_stage.h; sourceTree = "<group>"; };
+		6871D8C2115B5ED500CFEEC8 /* control_ack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = control_ack.c; path = Classes/control_ack.c; sourceTree = "<group>"; };
+		6871DA3D115B82F800CFEEC8 /* control_ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = control_ack.h; path = Classes/control_ack.h; sourceTree = "<group>"; };
+		6873905E10C7B30F001F305B /* SettingsMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsMenu.m; sourceTree = "<group>"; };
+		6873905F10C7B30F001F305B /* SettingsMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsMenu.h; sourceTree = "<group>"; };
+		687390CE10C7BA6E001F305B /* SettingsMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsMenu.xib; path = Release/Ressources/SettingsMenu.xib; sourceTree = "<group>"; };
+		6873AAAC10D15F24001F305B /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default.jpg; path = Release/Ressources/default.jpg; sourceTree = "<group>"; };
+		6873AAAE10D15F24001F305B /* HUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HUD.xib; path = Release/Ressources/HUD.xib; sourceTree = "<group>"; };
+		6873AAB010D15F24001F305B /* level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = level.png; path = Release/Ressources/level.png; sourceTree = "<group>"; };
+		6873AAB110D15F24001F305B /* others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others.png; path = Release/Ressources/others.png; sourceTree = "<group>"; };
+		6873AAB210D15F24001F305B /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screen.png; path = Release/Ressources/screen.png; sourceTree = "<group>"; };
+		6873AAB310D15F24001F305B /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Release/Ressources/settings.png; sourceTree = "<group>"; };
+		6873AAB610D15F24001F305B /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wifi.png; path = Release/Ressources/wifi.png; sourceTree = "<group>"; };
+		6873AACA10D1654E001F305B /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		6873AACB10D1654E001F305B /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		6873AC1C10D25692001F305B /* battery0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery0.png; path = Release/Ressources/battery0.png; sourceTree = "<group>"; };
+		6873AC1D10D25692001F305B /* battery1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery1.png; path = Release/Ressources/battery1.png; sourceTree = "<group>"; };
+		6873AC1E10D25692001F305B /* battery2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery2.png; path = Release/Ressources/battery2.png; sourceTree = "<group>"; };
+		6873AC1F10D25692001F305B /* battery3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery3.png; path = Release/Ressources/battery3.png; sourceTree = "<group>"; };
+		6899BEF81083389200ED08CB /* OpenGLVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLVideo.m; path = Classes/OpenGLVideo.m; sourceTree = "<group>"; };
+		6899BEF91083389200ED08CB /* OpenGLVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLVideo.h; path = Classes/OpenGLVideo.h; sourceTree = "<group>"; };
+		6899BEFA1083389200ED08CB /* OpenGLSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLSprite.m; path = Classes/OpenGLSprite.m; sourceTree = "<group>"; };
+		6899BEFB1083389200ED08CB /* OpenGLSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLSprite.h; path = Classes/OpenGLSprite.h; sourceTree = "<group>"; };
+		6899BF041083389200ED08CB /* ConstantsAndMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConstantsAndMacros.h; path = Classes/ConstantsAndMacros.h; sourceTree = "<group>"; };
+		689B5A690FB9AD6C0095AB01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68E5679210E1193400EEB77F /* TVOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVOut.h; path = Classes/Hide/TVOut.h; sourceTree = "<group>"; };
+		68E5679310E1193400EEB77F /* TVOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVOut.m; path = Classes/Hide/TVOut.m; sourceTree = "<group>"; };
+		8A0885401111986900B2F6B9 /* joystick_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joystick_background.png; path = Release/Ressources/joystick_background.png; sourceTree = "<group>"; };
+		8A0885411111986900B2F6B9 /* joystick_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joystick_thumb.png; path = Release/Ressources/joystick_thumb.png; sourceTree = "<group>"; };
+		8A5846F1119811940072FF5C /* SettingsMenuDebug.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsMenuDebug.xib; path = Release/Ressources/SettingsMenuDebug.xib; sourceTree = "<group>"; };
+		8A5D9BD8110473C600D4D1BC /* ControlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControlData.h; path = Classes/ControlData.h; sourceTree = "<group>"; };
+		8A5D9BD9110473C600D4D1BC /* ControlData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ControlData.c; path = Classes/ControlData.c; sourceTree = "<group>"; };
+		8A5DA1681106343300D4D1BC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Release/Ressources/back.png; sourceTree = "<group>"; };
+		8A774EA511A683B500F76B86 /* ARDroneTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARDroneTypes.h; path = Release/ARDroneTypes.h; sourceTree = "<group>"; };
+		8A885DD9111C439200314ADB /* take_land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = take_land.png; path = Release/Ressources/take_land.png; sourceTree = "<group>"; };
+		8A885DDA111C439200314ADB /* take_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = take_off.png; path = Release/Ressources/take_off.png; sourceTree = "<group>"; };
+		8A885DE4111C45D800314ADB /* emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emergency.png; path = Release/Ressources/emergency.png; sourceTree = "<group>"; };
+		8A885EE8111C5CBD00314ADB /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset.png; path = Release/Ressources/reset.png; sourceTree = "<group>"; };
+		8A885F74112008FA00314ADB /* plop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = plop.wav; path = Release/Ressources/plop.wav; sourceTree = "<group>"; };
+		8A8AD6D911526CBD008AF339 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = Release/Ressources/fire.png; sourceTree = "<group>"; };
+		8AC5D23A11E4805000AD2C00 /* ARDrone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ARDrone.png; path = Release/Ressources/ARDrone.png; sourceTree = "<group>"; };
+		8ACDD972112ACD070059A2D2 /* finger_print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finger_print.png; path = Release/Ressources/finger_print.png; sourceTree = "<group>"; };
+		8AD90165119021D300EE9582 /* control_cfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = control_cfg.h; path = Classes/control_cfg.h; sourceTree = "<group>"; };
+		8AD90166119021D300EE9582 /* control_cfg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = control_cfg.c; path = Classes/control_cfg.c; sourceTree = "<group>"; };
+		8AD906BB1191A06100EE9582 /* wifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wifi.h; path = Classes/wifi.h; sourceTree = "<group>"; };
+		8AD906BC1191A06100EE9582 /* wifi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wifi.c; path = Classes/wifi.c; sourceTree = "<group>"; };
+		8AFDFC5B1147D1D1008491C7 /* accelero_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = accelero_thumb.png; path = Release/Ressources/accelero_thumb.png; sourceTree = "<group>"; };
+		8AFF717911246FFC006FDE9E /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch.png; path = Release/Ressources/switch.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68903F300EACBEA400D8A80C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680C39401087202000C7D327 /* OpenGLES.framework in Frameworks */,
+				680C39F41087203700C7D327 /* CoreGraphics.framework in Frameworks */,
+				680C39F51087203700C7D327 /* AudioToolbox.framework in Frameworks */,
+				680C39F61087203700C7D327 /* CoreAudio.framework in Frameworks */,
+				680C39F71087203700C7D327 /* QuartzCore.framework in Frameworks */,
+				680C39F81087203700C7D327 /* UIKit.framework in Frameworks */,
+				680C39F91087203700C7D327 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				680BC4C5109840DA00F941F4 /* libARDroneEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				8AD906BB1191A06100EE9582 /* wifi.h */,
+				8AD906BC1191A06100EE9582 /* wifi.c */,
+				8A5D9BD8110473C600D4D1BC /* ControlData.h */,
+				8A5D9BD9110473C600D4D1BC /* ControlData.c */,
+				6871D84D115B5B2F00CFEEC8 /* video_stage.c */,
+				6871D84E115B5B2F00CFEEC8 /* video_stage.h */,
+				8AD90166119021D300EE9582 /* control_cfg.c */,
+				8AD90165119021D300EE9582 /* control_cfg.h */,
+				6871D8C2115B5ED500CFEEC8 /* control_ack.c */,
+				6871DA3D115B82F800CFEEC8 /* control_ack.h */,
+				6871D843115B5B1F00CFEEC8 /* opengl_stage.c */,
+				6871D844115B5B1F00CFEEC8 /* opengl_stage.h */,
+				6871D83D115B5B0800CFEEC8 /* mobile_main.c */,
+				6871D83E115B5B0800CFEEC8 /* mobile_main.h */,
+				6871D836115B5AD900CFEEC8 /* Navdata */,
+				68903F970EACC1ED00D8A80C /* ARDroneEngine */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5D23A11E4805000AD2C00 /* ARDrone.png */,
+				8A8AD6D911526CBD008AF339 /* fire.png */,
+				8AFDFC5B1147D1D1008491C7 /* accelero_thumb.png */,
+				8ACDD972112ACD070059A2D2 /* finger_print.png */,
+				8AFF717911246FFC006FDE9E /* switch.png */,
+				8A885F74112008FA00314ADB /* plop.wav */,
+				8A885EE8111C5CBD00314ADB /* reset.png */,
+				8A885DE4111C45D800314ADB /* emergency.png */,
+				8A885DD9111C439200314ADB /* take_land.png */,
+				8A885DDA111C439200314ADB /* take_off.png */,
+				8A0885401111986900B2F6B9 /* joystick_background.png */,
+				8A0885411111986900B2F6B9 /* joystick_thumb.png */,
+				8A5DA1681106343300D4D1BC /* back.png */,
+				6873AC1C10D25692001F305B /* battery0.png */,
+				6873AC1D10D25692001F305B /* battery1.png */,
+				6873AC1E10D25692001F305B /* battery2.png */,
+				6873AC1F10D25692001F305B /* battery3.png */,
+				6873AAAC10D15F24001F305B /* default.jpg */,
+				6873AAB010D15F24001F305B /* level.png */,
+				6873AAB110D15F24001F305B /* others.png */,
+				6873AAB210D15F24001F305B /* screen.png */,
+				6873AAB310D15F24001F305B /* settings.png */,
+				6873AAB610D15F24001F305B /* wifi.png */,
+				6873AAAE10D15F24001F305B /* HUD.xib */,
+				8A5846F1119811940072FF5C /* SettingsMenuDebug.xib */,
+				687390CE10C7BA6E001F305B /* SettingsMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				689B5A690FB9AD6C0095AB01 /* CoreGraphics.framework */,
+				68704E230EADCF5900C45877 /* AudioToolbox.framework */,
+				68704E240EADCF5900C45877 /* CoreAudio.framework */,
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68607EEE10DB8D27009514CF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68607EEF10DB8D27009514CF /* GLViewController.h */,
+				68607EF010DB8D27009514CF /* GLViewController.m */,
+				68607EF110DB8D27009514CF /* MainViewController.h */,
+				68607EF210DB8D27009514CF /* MainViewController.m */,
+			);
+			name = Controllers;
+			path = Classes/Controllers;
+			sourceTree = "<group>";
+		};
+		6871D836115B5AD900CFEEC8 /* Navdata */ = {
+			isa = PBXGroup;
+			children = (
+				6871D837115B5AD900CFEEC8 /* navdata.c */,
+				6871D838115B5AD900CFEEC8 /* navdata.h */,
+			);
+			name = Navdata;
+			path = Classes/Navdata;
+			sourceTree = "<group>";
+		};
+		68738F8610C6C72C001F305B /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				6873AACA10D1654E001F305B /* HUD.h */,
+				6873AACB10D1654E001F305B /* HUD.m */,
+				6873905F10C7B30F001F305B /* SettingsMenu.h */,
+				6873905E10C7B30F001F305B /* SettingsMenu.m */,
+			);
+			name = Menus;
+			path = Classes/Menus;
+			sourceTree = "<group>";
+		};
+		68903F970EACC1ED00D8A80C /* ARDroneEngine */ = {
+			isa = PBXGroup;
+			children = (
+				68B565051071F81E00752B1E /* Other sources */,
+				6899BF211083391F00ED08CB /* Headers */,
+				6890406F0EACC5F600D8A80C /* Classes */,
+			);
+			name = ARDroneEngine;
+			sourceTree = "<group>";
+		};
+		6890406F0EACC5F600D8A80C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				68E5677210E1173500EEB77F /* TVOut */,
+				68607EEE10DB8D27009514CF /* Controllers */,
+				68738F8610C6C72C001F305B /* Menus */,
+				686A12ED10BBDE16003E176D /* InternalProtocols.h */,
+				680BC46D10983EC800F941F4 /* ARDroneProtocols.h */,
+				8A774EA511A683B500F76B86 /* ARDroneTypes.h */,
+				680BC46E10983EC800F941F4 /* ARDrone.h */,
+				680C31331085BDB000C7D327 /* ARDrone.m */,
+				6899BEF91083389200ED08CB /* OpenGLVideo.h */,
+				6899BEF81083389200ED08CB /* OpenGLVideo.m */,
+				6899BEFB1083389200ED08CB /* OpenGLSprite.h */,
+				6899BEFA1083389200ED08CB /* OpenGLSprite.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6899BF211083391F00ED08CB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6899BF041083389200ED08CB /* ConstantsAndMacros.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		68B565051071F81E00752B1E /* Other sources */ = {
+			isa = PBXGroup;
+			children = (
+				680BC4C6109840E300F941F4 /* ARDroneEngine_Prefix.pch */,
+			);
+			name = "Other sources";
+			sourceTree = "<group>";
+		};
+		68E5677210E1173500EEB77F /* TVOut */ = {
+			isa = PBXGroup;
+			children = (
+				68E5679210E1193400EEB77F /* TVOut.h */,
+				68E5679310E1193400EEB77F /* TVOut.m */,
+			);
+			name = TVOut;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68903F2E0EACBEA400D8A80C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6899BF081083389200ED08CB /* OpenGLVideo.h in Headers */,
+				6899BF0A1083389200ED08CB /* OpenGLSprite.h in Headers */,
+				680C3AC510872B0300C7D327 /* ConstantsAndMacros.h in Headers */,
+				680BC46F10983EC800F941F4 /* ARDroneProtocols.h in Headers */,
+				680BC47010983EC800F941F4 /* ARDrone.h in Headers */,
+				680BC4C7109840E300F941F4 /* ARDroneEngine_Prefix.pch in Headers */,
+				686A12EE10BBDE16003E176D /* InternalProtocols.h in Headers */,
+				6873906110C7B30F001F305B /* SettingsMenu.h in Headers */,
+				6873AACC10D1654E001F305B /* HUD.h in Headers */,
+				68607EF310DB8D27009514CF /* GLViewController.h in Headers */,
+				68607EF510DB8D27009514CF /* MainViewController.h in Headers */,
+				68E5679410E1193400EEB77F /* TVOut.h in Headers */,
+				8A5D9BDA110473C600D4D1BC /* ControlData.h in Headers */,
+				6871D83A115B5AD900CFEEC8 /* navdata.h in Headers */,
+				6871D840115B5B0800CFEEC8 /* mobile_main.h in Headers */,
+				6871D848115B5B1F00CFEEC8 /* opengl_stage.h in Headers */,
+				6871D850115B5B2F00CFEEC8 /* video_stage.h in Headers */,
+				6871DA3E115B82F800CFEEC8 /* control_ack.h in Headers */,
+				8AD90167119021D300EE9582 /* control_cfg.h in Headers */,
+				8AD906BD1191A06100EE9582 /* wifi.h in Headers */,
+				8A774EA611A683B500F76B86 /* ARDroneTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68903F310EACBEA400D8A80C /* ARDroneEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68903F350EACBEC200D8A80C /* Build configuration list for PBXNativeTarget "ARDroneEngine" */;
+			buildPhases = (
+				6871E1751160E86F00CFEEC8 /* CopyLibraries */,
+				68903F2E0EACBEA400D8A80C /* Headers */,
+				68903F2F0EACBEA400D8A80C /* Sources */,
+				68903F300EACBEA400D8A80C /* Frameworks */,
+				6871E05C1160B25D00CFEEC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARDroneEngine;
+			productName = MykonosLib;
+			productReference = 680BC4C5109840DA00F941F4 /* libARDroneEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ARDroneEngine" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68903F310EACBEA400D8A80C /* ARDroneEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6871E1751160E86F00CFEEC8 /* CopyLibraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Compile ARDrone Library.\n";
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CopyLibraries;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d ../../ARDroneLib ] ; then\necho \"../../ARDroneLib does not exist ! Checkout it with svn !\"\nexit -1\nfi\n\nif [ ${EFFECTIVE_PLATFORM_NAME:1} = \"iphoneos\" ] && [ ${CONFIGURATION:0:3} != \"ARM\" ] ; then\necho \"The configuration \"$CONFIGURATION\" and the effective platform \"${EFFECTIVE_PLATFORM_NAME:1}\" doesn't match !\"\nexit -1\nfi\n\nif [ ${EFFECTIVE_PLATFORM_NAME:1} = \"iphonesimulator\" ] && [ ${CONFIGURATION:0:3} != \"SIM\" ] ; then\necho \"The configuration \"$CONFIGURATION\" and the effective platform \"${EFFECTIVE_PLATFORM_NAME:1}\" doesn't match !\"\nexit -1\nfi\n\necho ${EFFECTIVE_PLATFORM_NAME:1} ${CONFIGURATION:0:3}\n\ncd ../../ARDroneLib/Soft/Build\n\nexport ARDRONE_TARGET_OS=${EFFECTIVE_PLATFORM_NAME:1}\nif [ ${CONFIGURATION:4} = \"release\" ]; then\n\texport RELEASE_BUILD=yes\nelse \t\n\texport RELEASE_BUILD=no\nfi\n\necho \"Compiling ARDroneLib with options IPHONE_MODE = yes - RELEASE_BUILD = \"$RELEASE_BUILD\" - ARDRONE_TARGET_OS=\"${EFFECTIVE_PLATFORM_NAME:1}\".\"\nmake IPHONE_MODE=yes RELEASE_BUILD=$RELEASE_BUILD ARDRONE_TARGET_OS=${EFFECTIVE_PLATFORM_NAME:1}\n\ncd -\nexport ARDRONE_TARGET_OS_FORMAT=$ARDRONE_TARGET_OS\nexport ARDRONE_TARGET_OS_FORMAT=`echo $ARDRONE_TARGET_OS_FORMAT | sed -e \"s/iphone/iPhone/g\"`\nexport ARDRONE_TARGET_OS_FORMAT=`echo $ARDRONE_TARGET_OS_FORMAT | sed -e \"s/os/OS/g\"`\nexport ARDRONE_TARGET_OS_FORMAT=`echo $ARDRONE_TARGET_OS_FORMAT | sed -e \"s/simulator/Simulator/g\"`\n\nexport ARDRONE_TARGET_BUILD=$RELEASE_BUILD\nexport ARDRONE_TARGET_BUILD=`echo $ARDRONE_TARGET_BUILD | sed -e \"s/yes/PROD_MODE/g\"`\nexport ARDRONE_TARGET_BUILD=`echo $ARDRONE_TARGET_BUILD | sed -e \"s/no/DEBUG_MODE/g\"`\n\nexport ARDRONE_ARDRONELIB_PATH=\"../../ARDroneLib/Soft/Build/targets_versions/ardrone_lib_\"$ARDRONE_TARGET_BUILD\"_vlib_\"$ARDRONE_TARGET_OS\"_DeveloperPlatforms\"$ARDRONE_TARGET_OS_FORMAT\".platformDeveloperusrbingcc_4.2.1\"\nexport ARDRONE_SDKDEV_PATH=\"../../ARDroneLib/Soft/Build/targets_versions/sdk_\"$ARDRONE_TARGET_BUILD\"_vlib_\"$ARDRONE_TARGET_OS\"_DeveloperPlatforms\"$ARDRONE_TARGET_OS_FORMAT\".platformDeveloperusrbingcc_4.2.1\"\nexport ARDRONE_VLIB_PATH=\"../../ARDroneLib/Soft/Build/targets_versions/vlib_\"$ARDRONE_TARGET_BUILD\"_\"$ARDRONE_TARGET_OS\"_DeveloperPlatforms\"$ARDRONE_TARGET_OS_FORMAT\".platformDeveloperusrbingcc_4.2.1\"\n\nif [ ! -d $TARGET_BUILD_DIR ] ; then\n\techo \"Create \"$TARGET_BUILD_DIR\" directory.\"\n\tmkdir $TARGET_BUILD_DIR\t\nfi\n\necho \"Copy libraries compiled to \"$TARGET_BUILD_DIR\".\"\ncp $ARDRONE_ARDRONELIB_PATH/libpc_ardrone.a $TARGET_BUILD_DIR/\ncp $ARDRONE_SDKDEV_PATH/libsdk.a $TARGET_BUILD_DIR/\ncp $ARDRONE_VLIB_PATH/libvlib.a $TARGET_BUILD_DIR/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68903F2F0EACBEA400D8A80C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6899BF071083389200ED08CB /* OpenGLVideo.m in Sources */,
+				6899BF091083389200ED08CB /* OpenGLSprite.m in Sources */,
+				680C31351085BDB000C7D327 /* ARDrone.m in Sources */,
+				6873906010C7B30F001F305B /* SettingsMenu.m in Sources */,
+				6873AACD10D1654E001F305B /* HUD.m in Sources */,
+				68607EF410DB8D27009514CF /* GLViewController.m in Sources */,
+				68607EF610DB8D27009514CF /* MainViewController.m in Sources */,
+				68E5679510E1193400EEB77F /* TVOut.m in Sources */,
+				8A5D9BDB110473C600D4D1BC /* ControlData.c in Sources */,
+				6871D839115B5AD900CFEEC8 /* navdata.c in Sources */,
+				6871D83F115B5B0800CFEEC8 /* mobile_main.c in Sources */,
+				6871D84F115B5B2F00CFEEC8 /* video_stage.c in Sources */,
+				6871D8C3115B5ED500CFEEC8 /* control_ack.c in Sources */,
+				6871E7071164CDE500CFEEC8 /* opengl_stage.c in Sources */,
+				8AD90168119021D300EE9582 /* control_cfg.c in Sources */,
+				8AD906BE1191A06100EE9582 /* wifi.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		687B4E1C0F1666410094D61F /* ARM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos3.0;
+			};
+			name = "ARM-debug";
+		};
+		687B4E1E0F1666410094D61F /* ARM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				CONFIGURATION_BUILD_DIR = "$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = (
+					../../ARDroneLib,
+					../../ARDroneLib/Soft/Common,
+					../../ARDroneLib/Soft/Lib,
+					../../ARDroneLib/VLIB,
+					../../ARDroneLib/VLIB/Platform/arm11,
+					../../ARDroneLib/VP_SDK,
+					../../ARDroneLib/VP_SDK/VP_Com,
+					../../ARDroneLib/VP_SDK/VP_Os,
+					../../ARDroneLib/VP_SDK/VP_Os/linux,
+					../../ARDroneLib/VP_SDK/VP_Com/linux,
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INFOPLIST_PREPROCESS = NO;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				OTHER_CFLAGS = "-fms-extensions";
+				OTHER_LDFLAGS = (
+					"-lpc_ardrone",
+					"-lsdk",
+					"-lvlib",
+				);
+				PREBINDING = NO;
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = ARDroneEngine;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "ARM-debug";
+		};
+		687B4E1F0F1666610094D61F /* ARM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos3.0;
+			};
+			name = "ARM-release";
+		};
+		687B4E210F1666610094D61F /* ARM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				CONFIGURATION_BUILD_DIR = Release;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				GENERATE_PROFILING_CODE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../ARDroneLib,
+					../../ARDroneLib/Soft/Common,
+					../../ARDroneLib/Soft/Lib,
+					../../ARDroneLib/VLIB,
+					../../ARDroneLib/VLIB/Platform/arm11,
+					../../ARDroneLib/VP_SDK,
+					../../ARDroneLib/VP_SDK/VP_Com,
+					../../ARDroneLib/VP_SDK/VP_Os,
+					../../ARDroneLib/VP_SDK/VP_Os/linux,
+					../../ARDroneLib/VP_SDK/VP_Com/linux,
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INFOPLIST_PREPROCESS = NO;
+				KEEP_PRIVATE_EXTERNS = NO;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_CFLAGS = "-fms-extensions";
+				OTHER_LDFLAGS = (
+					"-lsdk",
+					"-lvlib",
+					"-lpc_ardrone",
+				);
+				PREBINDING = YES;
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = ARDroneEngine;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "008006E7-B418-4F20-A95A-A0569014ADB1";
+				SDKROOT = iphoneos3.0;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = "ARM-release";
+		};
+		687B4E220F1667C00094D61F /* SIM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = "SIM-release";
+		};
+		687B4E240F1667C00094D61F /* SIM-release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				CONFIGURATION_BUILD_DIR = "$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_SIMULATOR,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GENERATE_PROFILING_CODE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../ARDroneLib,
+					../../ARDroneLib/Soft/Common,
+					../../ARDroneLib/Soft/Lib,
+					../../ARDroneLib/VLIB,
+					../../ARDroneLib/VLIB/Platform/arm11,
+					../../ARDroneLib/VP_SDK,
+					../../ARDroneLib/VP_SDK/VP_Com,
+					../../ARDroneLib/VP_SDK/VP_Os,
+					../../ARDroneLib/VP_SDK/VP_Os/linux,
+					../../ARDroneLib/VP_SDK/VP_Com/linux,
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INFOPLIST_PREPROCESS = NO;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				OTHER_CFLAGS = "-fms-extensions";
+				OTHER_LDFLAGS = (
+					"-lpc_ardrone",
+					"-lsdk",
+					"-lvlib",
+				);
+				PREBINDING = NO;
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = ARDroneEngine;
+				SDKROOT = iphonesimulator3.0;
+				USER_HEADER_SEARCH_PATHS = ../../ARDroneLib/VLIB/Platform/x86;
+			};
+			name = "SIM-release";
+		};
+		68903F330EACBEA400D8A80C /* SIM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				CONFIGURATION_BUILD_DIR = "$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_SIMULATOR,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = (
+					../../ARDroneLib,
+					../../ARDroneLib/Soft/Common,
+					../../ARDroneLib/Soft/Lib,
+					../../ARDroneLib/VLIB,
+					../../ARDroneLib/VLIB/Platform/arm11,
+					../../ARDroneLib/VP_SDK,
+					../../ARDroneLib/VP_SDK/VP_Com,
+					../../ARDroneLib/VP_SDK/VP_Os,
+					../../ARDroneLib/VP_SDK/VP_Os/linux,
+					../../ARDroneLib/VP_SDK/VP_Com/linux,
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INFOPLIST_PREPROCESS = NO;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				OTHER_CFLAGS = "-fms-extensions";
+				OTHER_LDFLAGS = (
+					"-lpc_ardrone",
+					"-lsdk",
+					"-lvlib",
+				);
+				PREBINDING = NO;
+				PRELINK_LIBS = "";
+				PRODUCT_NAME = ARDroneEngine;
+				"REZ_SEARCH_PATHS[sdk=*]" = "";
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = "SIM-debug";
+		};
+		C01FCF4F08A954540054247B /* SIM-debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykonos Lefebure (YY39MVZ7NL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_OS_IPHONE,
+					DEBUG_MODE,
+					__linux__,
+					NO_ARDRONE_MAINLOOP,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = "SIM-debug";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68903F350EACBEC200D8A80C /* Build configuration list for PBXNativeTarget "ARDroneEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687B4E1E0F1666410094D61F /* ARM-debug */,
+				687B4E210F1666610094D61F /* ARM-release */,
+				68903F330EACBEA400D8A80C /* SIM-debug */,
+				687B4E240F1667C00094D61F /* SIM-release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "ARM-debug";
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ARDroneEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687B4E1C0F1666410094D61F /* ARM-debug */,
+				687B4E1F0F1666610094D61F /* ARM-release */,
+				C01FCF4F08A954540054247B /* SIM-debug */,
+				687B4E220F1667C00094D61F /* SIM-release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "ARM-debug";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
