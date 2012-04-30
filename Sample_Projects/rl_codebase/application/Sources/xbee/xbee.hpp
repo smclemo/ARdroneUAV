@@ -1,4 +1,4 @@
-//////////////////////////////////////
+/*/////////////////////////////////////
 // Xbee sensor system class
 // Author: Cooper Bills <csb88@cornell.edu>
 // 6/7/10
@@ -34,4 +34,4 @@ class Xbee
 		bool done;
 };
 
-#endif
+#endif*/

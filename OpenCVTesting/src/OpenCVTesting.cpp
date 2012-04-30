@@ -4,7 +4,16 @@
  * Author  Steven Clementson
  */
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <termios.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <unistd.h>
+
 #include <iostream>
+#include <sys/time.h>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -102,25 +111,26 @@ vector<Point> findBlobContour(Mat image, Vec3b matchColour, int thres)
 
 int main()
 {
-    VideoCapture	video;
-    Mat		  		frame;
-    int       		key = 0;
-    bool			objectSaved = false;
-    Vec3b			objectColour;
-    Mat 			converted;
-    vector<Point>	blobContour;
-    Point			blobLocation /*oldBlobLocation*/;
-    int				bearing;
-  //  int 			counter = 0;
-
-    video.open(0);
-    namedWindow("output", 1);
+    VideoCapture	video = VideoCapture(0);
 
     if(!video.isOpened())
     {
         cout << "Cannot initialise webcam!" << endl;
         return 1;
     }
+
+    Mat		  		frame;
+    int       		key = 0;
+    bool			objectSaved = false;
+    Vec3b			objectColour;
+    Mat 			converted;
+    vector<Point>	blobContour;
+    Point			blobLocation;
+  //  int				bearing;
+  //  int 			counter = 0;
+
+
+    namedWindow("output", 1);
 
     video >> frame;
     Point centre;
@@ -129,7 +139,14 @@ int main()
 
     while(key != 'q')
     {
+    	// ********* For latency testing *************
+    	/*char filename[256];
+    	struct timeval t;
+    	gettimeofday(&t, NULL);
+    	sprintf(filename, "%d.%06d.jpg", (int)t.tv_sec, (int)t.tv_usec);
         video >> frame;
+        imwrite(filename, frame);*/
+    	// *******************************************
 
         if(objectSaved)
         {
@@ -156,7 +173,7 @@ int main()
         		}
 
         		// Update desired colour
-        		objectColour = converted.at<Vec3b>(blobLocation);
+        		//objectColour = converted.at<Vec3b>(blobLocation);
 
         		// Draw the contour
         		vector< vector<Point> > contour;

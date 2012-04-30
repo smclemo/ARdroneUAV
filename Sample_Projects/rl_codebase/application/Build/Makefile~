@@ -51,7 +51,7 @@ GENERIC_BINARIES_SOURCE_ENTRYPOINTS+=			\
 GENERIC_INCLUDES:=$(addprefix -I,$(GENERIC_INCLUDES))
 
 GENERIC_LIB_PATHS=-L$(GENERIC_TARGET_BINARIES_DIR)
-GENERIC_LIBS=-lpc_ardrone -lgtk-x11-2.0 -lrt -lhighgui -lfftw3 -lml -lcxcore -lcv -lopencv_core -lopencv_highgui -lopencv_imgproc
+GENERIC_LIBS=-lpc_ardrone -lgtk-x11-2.0 -lrt -lhighgui -lfftw3 -lml -lcxcore -lcv
 
 SDK_FLAGS+="USE_APP=yes"
 SDK_FLAGS+="APP_ID=linux_sdk_demo"

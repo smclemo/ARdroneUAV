@@ -226,8 +226,6 @@ planner.o ../../targets_versions/linux_sdk_demo_PROD_MODE_vlib_Linux_3.0.0-17-ge
  ../VP_Api/vp_api_thread_helper.h \
  /home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Build/../../ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
  /home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Build/../Sources/Tools/coopertools.hpp \
- /home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Build/../Sources/xbee/xbee.hpp \
- /home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Build/../Sources/Tools/smoothingmedianfilter.hpp \
  /home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Build/../Sources/UI/gamepad.h \
  /home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Build/../Sources/UI/ui.h \
  /home/steven/ARdroneUAV/Sample_Projects/rl_codebase/application/Build/../../ARDrone_API/ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \

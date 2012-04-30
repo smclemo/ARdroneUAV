@@ -30,7 +30,6 @@ GENERIC_BINARIES_COMMON_SOURCE_FILES+=			\
    Navdata/NavDataContainer.cpp \
    Video/video_stage.c \
    UI/planner.cpp \
-   xbee/xbee.cpp \
    Tools/coopertools.cpp \
    Tools/medianfilter.cpp \
    Tools/smoothingmedianfilter.cpp 

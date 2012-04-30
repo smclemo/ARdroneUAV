@@ -1,9 +1,9 @@
-#include <stdio.h>   /* Standard input/output definitions */
-#include <string.h>  /* String function definitions */
-#include <unistd.h>  /* UNIX standard function definitions */
-#include <fcntl.h>   /* File control definitions */
-#include <errno.h>   /* Error number definitions */
-#include <termios.h> /* POSIX terminal control definitions */
+/*#include <stdio.h>   // Standard input/output definitions 
+#include <string.h>  // String function definitions 
+#include <unistd.h>  // UNIX standard function definitions 
+#include <fcntl.h>   // File control definitions 
+#include <errno.h>   // Error number definitions 
+#include <termios.h> // POSIX terminal control definitions 
 #include <pthread.h>
 
 #include "xbee.hpp"
@@ -65,11 +65,11 @@ void *xbee_thread(void *parm)
       //printf("\n");
     }
     //Apply averaging filter.  Note: sometimes the serial acts up, and the xbee only has a 10-bit ADC, so thats why there's an if check.
-    /* old 
-    if(temp0 < 1023) parent->adc0 = ((parent->adc0 * parent->avgRate) + temp0) / (parent->avgRate + 1);
-    if(temp1 < 1023) parent->adc1 = ((parent->adc1 * parent->avgRate) + temp1) / (parent->avgRate + 1);
-    if(temp2 < 1023) parent->adc2 = ((parent->adc2 * parent->avgRate) + temp2) / (parent->avgRate + 1);
-    if(temp3 < 1023) parent->adc3 = ((parent->adc3 * parent->avgRate) + temp3) / (parent->avgRate + 1); */
+    // old 
+    //if(temp0 < 1023) parent->adc0 = ((parent->adc0 * parent->avgRate) + temp0) / (parent->avgRate + 1);
+    //if(temp1 < 1023) parent->adc1 = ((parent->adc1 * parent->avgRate) + temp1) / (parent->avgRate + 1);
+    //if(temp2 < 1023) parent->adc2 = ((parent->adc2 * parent->avgRate) + temp2) / (parent->avgRate + 1);
+    //if(temp3 < 1023) parent->adc3 = ((parent->adc3 * parent->avgRate) + temp3) / (parent->avgRate + 1); 
     
     //insert into median filter
     if(temp0 < 1023 && temp0 > 0) {parent->adc0->pushValue(temp0); }//printf("%d %f\n", temp0, parent->adc0->getMedian()); }
@@ -107,9 +107,9 @@ Xbee::Xbee(int medianFilterValue, double smoothingRange)
   fd = open(XBEESERIALPORT, O_RDWR | O_NOCTTY);
   if (fd == -1)
   {
-    /*
-    * Could not open the port.
-    */
+    
+    // Could not open the port.
+    
 
     printf("\n      ERROR: open_port: Unable to open %s, xbee sensors will not be available.", XBEESERIALPORT);
     printf("\n      This can be ingored if no xbee is being used.\n\n");
@@ -120,22 +120,22 @@ Xbee::Xbee(int medianFilterValue, double smoothingRange)
     
     struct termios options;
 
-    /*
-     * Get the current options for the port...
-     */
+    
+     // Get the current options for the port...
+     
 
     tcgetattr(fd, &options);
 
-    /*
-     * Set the baud rates
-     */
+    
+     // Set the baud rates
+     
 
     cfsetispeed(&options, B9600);
     cfsetospeed(&options, B9600);
 
-    /*
-     * Enable the receiver and set local mode...
-     */
+   
+     // Enable the receiver and set local mode...
+     
 
     options.c_cflag |= (CLOCAL | CREAD);
     options.c_cflag &= ~PARENB;
@@ -152,9 +152,9 @@ Xbee::Xbee(int medianFilterValue, double smoothingRange)
     
     options.c_cc[VTIME] = 10;
 
-    /*
-     * Set the new options for the port...
-     */
+    
+    // Set the new options for the port...
+     
 
     tcsetattr(fd, TCSAFLUSH, &options);
     
@@ -201,7 +201,7 @@ int Xbee::updateFrontDeriv()
 int Xbee::lastFrontDeriv()
 {
   return deriv2s;
-}
+}*/
 
 
 
