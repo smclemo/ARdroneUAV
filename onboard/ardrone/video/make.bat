@@ -1,1 +1,1 @@
-arm-none-linux-gnueabi-g++.exe -o ../bin/video -lpthread ../util/util.c video.c main_video.c
+arm-none-linux-gnueabi-g++.exe -lpthread -o ../bin/v4l2 v4l2.c

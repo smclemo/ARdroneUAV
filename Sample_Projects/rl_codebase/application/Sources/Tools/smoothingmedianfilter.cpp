@@ -34,7 +34,6 @@ double SmoothingMedianFilter::getMedian()
   if(currentMedian < 0)
   {
     int medianNum = size / 2 + (size % 2);
-    int i;
     int medianIndex = 0;
     
     for(int i = 0; i < size; i++) 

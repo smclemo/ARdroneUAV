@@ -24,6 +24,11 @@ struct buffer {
     size_t length;
 };
 
+struct point {
+	unsigned int x;
+	unsigned int y;
+};
+
 static char * dev_name = "/dev/video0";		//AR.Drone front camera
 //static char * dev_name = "/dev/video1";	//AR.Drone bottom camera
 static int fd = -1;
@@ -62,6 +67,133 @@ static int read_frame(void)
     return 1;
 }
 
+/* 	generate a half size image by averaging 2x2 blocks of pixels together
+	resulting value is guaranteed to be correct to within +/- 0.5 but note:
+	1 2                        1 1
+	1 2  averages to 1         2 2  averages to 2
+
+void halfsize(unsigned char* halfim, unsigned char* im, int width, int height)
+{
+	int ix, iy;
+	for(iy=0; iy<height/2; iy++)
+	{
+		for(ix=0; ix<width/16; ix++)
+		{
+			uint8x16_t r1pixels = vld1q_u8((uint8_t*)im+(16*ix+2*iy*width)); // load 16 8-bit pixels from row 1
+			uint8x16_t r2pixels = vld1q_u8((uint8_t*)im+(16*ix+2*iy*width+width)); // load 16 8-bit pixels from row 2
+			
+			uint8x16_t avpixels = vrhaddq_u8(r1pixels,r2pixels); // average the rows into a 8x16 (rounding up here)
+			uint16x8_t averaged_16 = vpaddlq_u8(avpixels);        //average the columns into a 16x8
+			uint8x8_t averaged = vshrn_n_u16(averaged_16,1);  // divide by two and narrow into 8x8 (rounding down here)
+
+			vst1_u8((uint8_t*)(halfim+8*ix+(width/2)*iy),averaged); // store 8 8-bit values into destination image
+		}
+	}
+}*/
+
+//return timestamp in microseconds since first call to this function
+int util_timestamp_int()
+{
+  static struct timeval tv1;
+  struct timeval tv;
+  if(tv1.tv_usec==0 && tv1.tv_sec==0) gettimeofday(&tv1, NULL); 
+  gettimeofday(&tv, NULL); 
+  return (int)(tv.tv_sec-tv1.tv_sec)*1000000+(int)(tv.tv_usec-tv1.tv_usec);
+}
+
+void drawDot(void* data_pointer, unsigned int x, unsigned int y, unsigned int radius)
+{
+	unsigned int i, j;
+	for(i = 0; i < radius; i++)
+	{
+		for(j = 0; j < radius; j++)
+		{			
+			if((radius%2 == 1) && (j == radius-1 || i == radius-1))	// account for odd radius
+			{
+				*((unsigned char*)data_pointer + ((x+i+1)+320*(y+j))) = 255;
+				*((unsigned char*)data_pointer + ((x+i)+320*(y+j+1))) = 255;
+				if(j == radius-1 && i == radius-1)
+					*((unsigned char*)data_pointer + ((x+i+1)+320*(y+j+1))) = 255;
+			}
+			
+			*((unsigned char*)data_pointer + ((x+i)+320*(y+j))) = 255;
+			*((unsigned char*)data_pointer + (320*240 + (x+i)/2+160*(int)((y+j)/2))) = 0;
+			*((unsigned char*)data_pointer + (320*240+160*120+(x+i)/2+160*(int)((y+j)/2))) = 255;
+		}
+	}
+}
+
+// takes about 1.1ms. 
+// Known issue: outliers on the right or bottom of the image have a greater effect when the blob
+// is in the top of left of the image. Ideally should use median rather than mean but this would be too slow.
+void findBlob(void* data_pointer, unsigned char Ymin, unsigned char Ymax, unsigned char Umin, unsigned char Umax, unsigned char Vmin, unsigned char Vmax)
+{
+	// pixel at location (x,y) has:
+	// Y value i=x+320*y
+	// U value i=320*240 + x/2+160*(int)(y/2)
+	// V value i=320*240+160*120+x/2+160*(int)(y/2)
+	
+	struct point centre;
+	centre.x = 0;
+	centre.y = 0;
+	unsigned int i, x, y, count = 0;
+	unsigned char Y, U, V;
+	
+	/*for(i = 0; i < 320*240; i++)
+	{
+		x = i%320;
+		y = i/320;
+		//Y = *((unsigned char*)data_pointer + (x+320*y));
+		//U = *((unsigned char*)data_pointer + (320*240 + x/2+160*(int)(y/2)));
+		V = *((unsigned char*)data_pointer + (320*240+160*120+x/2+160*(int)(y/2)));
+		
+		/*testing
+		if(Y>=Ymin && Y<=Ymax)
+			*((unsigned char*)data_pointer + (x+320*y)) = 0;
+		
+		if(U>=Umin && U<=Umax)
+			*((unsigned char*)data_pointer + (320*240 + x/2+160*(int)(y/2))) = 0;
+		
+		if(V>=Vmin && V<=Vmax)
+			*((unsigned char*)data_pointer + (320*240+160*120+x/2+160*(int)(y/2))) = 0;
+		
+		
+		if(Y>=Ymin && Y<=Ymax && U>=Umin && U<=Umax && V>=Vmin && V<=Vmax)
+		{
+			centre.x += x;
+			centre.y += y;
+			count++;
+		}			
+	}*/
+	
+	for(i = 96000; i < 115200; i++)
+	{
+		V = *((unsigned char*)data_pointer + i);
+
+		if(V>=Vmin && V<=Vmax)
+		{
+			*((unsigned char*)data_pointer + i) = 0;
+			centre.x += 2*((i-96000)%160);
+			centre.y += (i-96000)/80;
+			count++;
+		}
+	}
+	
+	if(count > 5)
+	{
+		centre.x /= count;
+		centre.y /= count;
+	}
+	else
+	{
+		centre.x = 160;
+		centre.y = 120;
+	}
+	
+	drawDot(data_pointer, centre.x, centre.y, 4);
+	//return centre;
+}
+
 static int read_frame_small(void)
 {
     struct v4l2_buffer buf;
@@ -80,7 +212,7 @@ static int read_frame_small(void)
     printf ("Buffer: index = %d\n", buf.index);
 	void* data_pointer = buffers[buf.index].start;
 	
-	/* two loops = 39.3ms
+	/* two loops = 13.5ms
 	util_timestamp_int();
 	for(i = 0; i < image_size/2; i++)
 	{								
@@ -95,8 +227,8 @@ static int read_frame_small(void)
 												*((unsigned char*)data_pointer + (ind + 320)))/2;							
 	}*/
 	
-	// One loop = 26.7ms
-	util_timestamp_int();
+	// One loop = 6.8ms
+	//util_timestamp_int();
 	for(i = 0; i < image_size/4; i++)
 	{
 		// (x,y) = AVERAGE[(2x,4y)+(2x+1,4y)+(2x,4y+1)+(2x+1,4y+1)]
@@ -108,9 +240,28 @@ static int read_frame_small(void)
 												*((unsigned char*)data_pointer + (fact + 640)) + 
 												*((unsigned char*)data_pointer + (fact + 641)))/4;							
 	}
-	printf ("Time to downsample frame = %d microseconds\n", util_timestamp_int());
 	
-    fwrite(data_pointer, image_size/4, 1, file_fd);
+	/* NEON Optimised = XX.Xms
+	util_timestamp_int();
+	
+	struct buffer* output_image = NULL;
+	output_image = calloc(1, sizeof(*output_image));
+	output_image[0].length = buf.length;
+	output_image[0].start = mmap(NULL, buf.length, PROT_READ|PROT_WRITE, MAP_SHARED, fd, buf.m.offset);
+			
+	unsigned char* output_image_pointer = (char*) output_image[0].start;
+	halfsize(output_image_pointer, (unsigned char*)data_pointer, 640, 480);
+	*/
+	//printf("Time to downsample frame = %d microseconds\n", util_timestamp_int());
+	//printf("Y = %i U = %i V = %i\n", *((unsigned char*)data_pointer + 38560), *((unsigned char*)data_pointer + 86480), *((unsigned char*)data_pointer + 105680));
+	/**((unsigned char*)data_pointer + 38560) = 0;
+	*((unsigned char*)data_pointer + 86480) = 0;
+	*((unsigned char*)data_pointer + 105680) = 0;*/
+	//util_timestamp_int();
+	findBlob(data_pointer, 91, 100, 130, 136, 200, 240);
+	//printf("Time to find blob = %d microseconds\n", util_timestamp_int());
+	
+    fwrite(/*(void*)output_image_pointer*/data_pointer, image_size/4, 1, file_fd);
 
     if (ioctl(fd, VIDIOC_QBUF, &buf) < 0) 
 	{
@@ -121,16 +272,7 @@ static int read_frame_small(void)
     return 1;
 }
 
-//return timestamp in microseconds since first call to this function
-int util_timestamp_int()
-{
-  static struct timeval tv1;
-  struct timeval tv;
-  if(tv1.tv_usec==0 && tv1.tv_sec==0) gettimeofday(&tv1, NULL); 
-  gettimeofday(&tv, NULL); 
-  return (int)(tv.tv_sec-tv1.tv_sec)*1000000+(int)(tv.tv_usec-tv1.tv_usec);
-}
-
+/*
 int reset_cropping_parameters()
 {
 	struct v4l2_cropcap cropcap;
@@ -149,7 +291,7 @@ int reset_cropping_parameters()
 	crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
 	crop.c = cropcap.defrect; 
 
-	/* Ignore if cropping is not supported (EINVAL). */
+	//Ignore if cropping is not supported (EINVAL). 
 
 	if (-1 == ioctl(fd, VIDIOC_S_CROP, &crop) && errno != EINVAL) 
 	{
@@ -158,7 +300,7 @@ int reset_cropping_parameters()
 	}
 	
 	return 0;
-}
+}*/
 
 int main(int argc,char ** argv)
 {

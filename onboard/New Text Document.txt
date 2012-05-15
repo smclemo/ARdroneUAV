@@ -1,0 +1,3 @@
+video only: 18.58 fps
+video and fly: 18.58 fps
+video and fly and record: 18.58 fps

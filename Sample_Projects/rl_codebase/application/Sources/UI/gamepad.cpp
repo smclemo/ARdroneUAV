@@ -188,7 +188,7 @@ C_RESULT update_gamepad(void)
     yaw = planner->dyaw_final;
     z = planner->dgaz_final;
     ardrone_at_set_radiogp_inputC(y, x, z, yaw); //range checking done in C wrapper
-    PRINT("Pitch:%3d Roll:%3d Gaz:%3d Yaw:%3d\n", y, x, z, yaw);
+   // PRINT("Pitch:%3d Roll:%3d Gaz:%3d Yaw:%3d\n", y, x, z, yaw);
   }
   //Handled in keyboard.cpp
   
@@ -338,7 +338,7 @@ C_RESULT update_gamepad(void)
   if(refresh_values && (planner == NULL || !planner->enabled))// Axis values to refresh
   {
     ardrone_at_set_radiogp_inputC(y, x, z, yaw); //range checking done in C wrapper
-    PRINT("Pitch:%3d Roll:%3d Gaz:%3d Yaw:%3d\n", y, x, z, yaw);
+    //PRINT("Pitch:%3d Roll:%3d Gaz:%3d Yaw:%3d\n", y, x, z, yaw);
   }
   
   return C_OK;

@@ -51,14 +51,18 @@ extern "C" {
   void ardrone_at_set_led_animationC ( /*LED_ANIMATION_IDS*/int anim_id, float32_t freq, uint32_t duration_sec)
     { printf("LED ANIMATION NOT IMPLEMENTED\n"); }
   void ardrone_at_zapC(ZAP_VIDEO_CHANNEL channel){ardrone_at_zap(channel);}
+
   void start_stop()
   {
     ARDRONE_STARTED = ARDRONE_STARTED ? 0 : 1;
     ardrone_tool_set_ui_pad_start(ARDRONE_STARTED);
-	}
+  }
+
+
   int ardrone_at_set_radiogp_inputC(int32_t y, int32_t x, int32_t z, int32_t yaw){
     
-    if(y == lasty && x == lastx && z == lastz && yaw == lastyaw && repeatCount < 10) {
+    if(y == lasty && x == lastx && z == lastz && yaw == lastyaw && repeatCount < 10)
+    {
       repeatCount++;
       return 0; //only continue if does not mach last command sent
     }
@@ -334,7 +338,7 @@ C_RESULT update_gamepad(void)
   if(refresh_values && (planner == NULL || !planner->enabled))// Axis values to refresh
   {
     ardrone_at_set_radiogp_inputC(y, x, z, yaw); //range checking done in C wrapper
-    PRINT("Pitch:%3d Roll:%3d Gaz:%3d Yaw:%3d\n", y, x, z, yaw);
+    //PRINT("Pitch:%3d Roll:%3d Gaz:%3d Yaw:%3d\n", y, x, z, yaw);
   }
   
   return C_OK;

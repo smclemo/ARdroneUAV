@@ -16,7 +16,9 @@
 //#include "xbee/xbee.hpp"
 #include "gamepad.h"
 #include <sys/time.h>
+#include <time.h>
 #include <fstream>
+#include <math.h>
 
 #include <iostream>
 #include <opencv/highgui.h>
@@ -34,13 +36,22 @@ extern int saveColourNow;
 
 //Xbee *xbee;
 
-
+FILE *fp;
+int logcnt2=0;
 //*****************************************************************
 
 using namespace std;
 
-#define GAZ_GAIN 25
-#define YAW_GAIN 20
+#define GAZ_GAIN -100
+#define YAW_GAIN 80
+
+//return timestamp in seconds with microsecond resolution
+double util_timestamp()
+{
+  struct timeval tv;
+  gettimeofday(&tv, NULL); 
+  return (double)tv.tv_sec+((double)tv.tv_usec)/1000000;
+}
 
 // Computes direct distance between 2 points using Pythagoras
 int distanceDirect(CvPoint a, CvPoint b)
@@ -103,23 +114,23 @@ CvSeq* findBlobContour(IplImage* image, int* matchColour, int thres)
 	cvSet(upperBound, ub);
 
 
-	cvNamedWindow("ub", CV_WINDOW_AUTOSIZE);
-	cvShowImage("ub", upperBound);
+	//cvNamedWindow("ub", CV_WINDOW_AUTOSIZE);
+	//cvShowImage("ub", upperBound);
 
-	cvNamedWindow("lb", CV_WINDOW_AUTOSIZE);
-	cvShowImage("lb", lowerBound);
+	//cvNamedWindow("lb", CV_WINDOW_AUTOSIZE);
+	//cvShowImage("lb", lowerBound);
 
 
 
-	cvNamedWindow("conv", CV_WINDOW_AUTOSIZE);
-	cvShowImage("conv", image);
+	//cvNamedWindow("conv", CV_WINDOW_AUTOSIZE);
+	//cvShowImage("conv", image);
 
 	// Create binary image
 	IplImage* mask = cvCreateImage(cvSize(320, 240), IPL_DEPTH_8U, 1);;
 	cvInRange(image, lowerBound, upperBound, mask);
 
-	cvNamedWindow("mask", CV_WINDOW_AUTOSIZE);
-	cvShowImage("mask", mask);
+	//cvNamedWindow("mask", CV_WINDOW_AUTOSIZE);
+	//cvShowImage("mask", mask);
 
 	// Erode and Dilate
 	IplConvKernel* elem = cvCreateStructuringElementEx(5, 5, 0, 0, CV_SHAPE_RECT);
@@ -127,8 +138,8 @@ CvSeq* findBlobContour(IplImage* image, int* matchColour, int thres)
 	cvMorphologyEx(mask, mask, temp, elem, CV_MOP_CLOSE);
 	cvMorphologyEx(mask, mask, temp, elem, CV_MOP_OPEN);
 
-	cvNamedWindow("cleanMask", CV_WINDOW_AUTOSIZE);
-	cvShowImage("cleanMask", mask);
+	//cvNamedWindow("cleanMask", CV_WINDOW_AUTOSIZE);
+	//cvShowImage("cleanMask", mask);
 
 	CvMemStorage* contours = cvCreateMemStorage(0);
 	CvSeq* contour = 0;
@@ -150,7 +161,23 @@ CvSeq* findBlobContour(IplImage* image, int* matchColour, int thres)
 
 //***************************************************************************************
 
-
+//logging
+void navLog_Save(int dgaz, int dyaw, int locX, int locY)
+{
+	logcnt2++;
+	fprintf(fp,"%d,%i,%f,%i,%f,%i,%i\n"
+	//sequence+timestamp
+	,logcnt2
+	//height
+	,dgaz  // setpoint height
+	,(float)globalNavData.altitude/10       // actual height above ground in [cm] 
+	//yaw
+	,dyaw    //yaw pitch [deg]
+	,globalNavData.yaw         //actual yaw  
+	,locX				//blob x location
+	,locY				//blob y location
+  );    
+}
 
 //Thread to run separately:
 void *Planner_Thread(void *params)
@@ -168,9 +195,18 @@ void *Planner_Thread(void *params)
 	CvSeq*		blobContour;
 	CvPoint		blobLocation;
 	//int		bearing;
+	int 		numFrames = 0;
+	double 		timeStart = 0.0;
 
 	cvNamedWindow("output", CV_WINDOW_AUTOSIZE);
 	
+	//File Output
+	fp = fopen("flightLog.csv", "wb");
+	if(fp==NULL)
+	{
+		printf("File open failed\n");
+	}
+	fprintf(fp,"Log Count,Desired Height,Actual Height,Desired Yaw,Actual Yaw,Blob x-coord,Blob y-coord\n");
 
   	//******** Add Your Initialization Above this Line *********
 
@@ -186,6 +222,10 @@ void *Planner_Thread(void *params)
 				//If you would like to handle this situation, put it here.
 				continue; //planner will only run when new data is available
 			}
+
+			numFrames++;
+			if (timeStart <= 1.0)
+				timeStart = util_timestamp();
 
 			cvCopy(frontImgStream, frame);
 			newFrameAvailable = 0; //reset
@@ -265,31 +305,38 @@ void *Planner_Thread(void *params)
 			int deltaX = blobLocation.x - centre.x;
 			int deltaY = blobLocation.y - centre.y;
 			//******** Edit Above this Line **********
+			
 
-
-			self->dpitch = 0; // No forward motion
+			/*self->dpitch = 0; // No forward motion
 			self->droll = 0; // No side-to-side motion
 			self->dyaw = deltaX*YAW_GAIN; // turning motion
-			self->dgaz = deltaY*GAZ_GAIN; // Adjust altitude by difference from goal.
+			self->dgaz = deltaY*GAZ_GAIN; // Adjust altitude by difference from goal.*/
 
 			//Apply commands all at once
-			self->dgaz_final = self->dgaz + deltaY*GAZ_GAIN;
-			self->dyaw_final = self->dyaw + deltaX*YAW_GAIN;
-			self->droll_final = self->droll;
-			self->dpitch_final = self->dpitch;
+			self->dgaz_final = deltaY*GAZ_GAIN;
+			self->dyaw_final = deltaX*YAW_GAIN;
+			self->droll_final = 0;
+			self->dpitch_final = 0;
+			
+			navLog_Save(self->dgaz_final, self->dyaw_final, deltaX, deltaY);
+			//14.5 fps when flying
+			if (numFrames%30==0)
+				printf("Framerate: %f frames per second\n", (double)numFrames/(util_timestamp()-timeStart));
 
-    } //end if enabled
-    else
-    {
-	objectSaved = false;
-      	pthread_yield();
-    }
-    usleep(50000);
-  }
-
-  //De-initialization 
-  printf("thread returned\n");
-  return 0;
+    		} //end if enabled
+    		else
+    		{
+			objectSaved = false;
+		      	pthread_yield();
+    		}
+    		usleep(50000);
+	}
+	
+	//De-initialization 
+	printf("thread returned\n");
+	if (fclose(fp) != 0)
+		printf("File not closed!");
+	return 0;
 }
 
 

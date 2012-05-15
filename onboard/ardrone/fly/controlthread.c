@@ -34,10 +34,10 @@
 #include "../util/util.h"
 #include "../motorboard/mot.h"
 #include "../attitude/attitude.h"
-#include "../udp/udp.h"
+//#include "../udp/udp.h"
 #include "pid.h"
 #include "controlthread.h"
-#include "../video/video.h"
+//#include "../video/video.h"
 
 
       float adj_roll;
@@ -73,20 +73,20 @@ struct setpoint_struct {
   float throttle_max; //max throttle (while flying)
 } setpoint;
 
-udp_struct udpNavLog;
+//udp_struct udpNavLog;
 int logcnt=0;
-void navLog_Send();
+//void navLog_Send();
 void *ctl_thread_main(void* data);
 
-	vid_struct vid;
+	//vid_struct vid;
 
-	img_struct* img_old;
-	img_struct* img_new;
+	//img_struct* img_old;
+	//img_struct* img_new;
 	
 	int dx,dy;
 	int x=0,y=0;
 
-void video_cg(img_struct* img) 
+/*void video_cg(img_struct* img) 
 {
 	int h=img->h;
 	int w=img->w;
@@ -148,9 +148,9 @@ void video_blocksum(img_struct* img1, img_struct* img2, int* dx_out, int* dy_out
 			
 	*dx_out=min_dx;
 	*dy_out=min_dy;
-}
+}*/
 
-int ctl_Init(char *client_addr) 
+int ctl_Init() 
 {
 	int rc;
   
@@ -180,14 +180,14 @@ int ctl_Init(char *client_addr)
 
   
   //udp logger
-  udpClient_Init(&udpNavLog, client_addr, 7778);
+ // udpClient_Init(&udpNavLog, client_addr, 7778);
   //navLog_Send();
-  printf("udpClient_Init\n", rc);
+ // printf("udpClient_Init\n", rc);
   
 	//start motor thread
 	rc = mot_Init();
 	if(rc) return rc;
-  
+  /*
 	vid.device = (char*)"/dev/video1";
 	vid.w=176;
 	vid.h=144;
@@ -198,7 +198,7 @@ int ctl_Init(char *client_addr)
 	img_new = video_CreateImage(&vid);
 	
 	video_GrabImage(&vid, img_old);
-
+*/
 	//start ctl thread 
 	rc = pthread_create(&ctl_thread, NULL, ctl_thread_main, NULL); 
 	if(rc) {
@@ -292,7 +292,7 @@ void *ctl_thread_main(void* data)
 
 
 //logging
-void navLog_Send()
+/*void navLog_Send()
 {
   char logbuf[1024];
   int logbuflen;
@@ -333,7 +333,7 @@ void navLog_Send()
 
   printf(logbuf);
 //  udpClient_Send(&udpNavLog,logbuf,logbuflen); 
-}
+}*/
 
 int ctl_FlatTrim()
 {
@@ -390,7 +390,7 @@ void setPidYaw(float Kp, float Ki, float Kd){
 	pid_Init(&pid_yaw,  Kp,Ki,Kd,0);
 }
 
-void setPidHight(float Kp, float Ki, float Kd){
+void setPidHeight(float Kp, float Ki, float Kd){
 	pid_Init(&pid_h, Kp, Ki, Kd, 10);
 }
 

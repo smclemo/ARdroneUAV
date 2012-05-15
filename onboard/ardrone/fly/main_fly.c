@@ -37,8 +37,8 @@
 #include "../util/type.h"
 #include "../util/util.h"
 #include "../motorboard/mot.h"
-#include "../udp/udp.h"
 #include "controlthread.h"
+#include "../video/v4l2.h"
 
 float Kp = 0.3;
 float Ki = 0.0;
@@ -49,44 +49,38 @@ float gain = 0.01;
 void setPid() {
 	setPidPitchRoll(Kp,Ki,Kd);
 	//setPidYaw(Kp,Ki,Kd);
-	//setPidHight(Kp,Ki,Kd);
+	//setPidheight(Kp,Ki,Kd);
 }
 
 int main()
-{
-  printf("Reservoir Lab QuadCopter control\n");
-  //wait for udp packet on port 7777
-  udp_struct udpCmd;
-  udpServer_Init(&udpCmd,7777,1/*blocking*/);
-  char buf[1024];
-
+{  
+  //char c = 'q';
   setPid();
-
+	
   float roll = 0;
   float pitch = 0;
   float yaw = 0;
-  float hight = 0;
+  float height = 10;
 
-  int bufcnt;
-
-  //kill program.elf
-  int rc = system("/usr/bin/killall program.elf > /dev/null 2>&1");
-  printf("killall program.elf -> returncode=%d  (0=killed,256=not found)\n",rc);	
-  
   //init controller
-  ctl_Init(inet_ntoa(udpCmd.si_other.sin_addr));
+  ctl_Init();
   printf("ctl_Init completed\n");
 
+  videoInit();
+  printf("videoInit completed\n");
+  
   //main loop	
   while(1) { 
-	//handle user input
-	int c=tolower(util_getch());
-
+	
+	struct point offset = processFrame();
+	yaw += (float) offset.x/100.0;
+	
+	/*
 	if(c=='s') {
 	  roll = 0;
       pitch = 0;
       yaw = 0;
-	  hight = 10;
+	  height = 10;
 	}
 	if(c=='q') {
 		printf("QUITTING !!!\n");
@@ -164,15 +158,15 @@ int main()
 	}
 
 	if(c=='e') { // pgup
-		hight+=10.;
-		printf("hight: %f\n", hight);
+		height+=10.;
+		printf("height: %f\n", height);
 	}
 	if(c=='c') { // pgdown
-		hight-=10.;
-		printf("hight: %f\n", hight);
-	}
+		height-=10.;
+		printf("height: %f\n", height);
+	}*/
 
-	ctl_SetSetpoint(roll,pitch,yaw,hight);
+	ctl_SetSetpoint(roll,pitch,yaw,height);
   }
   ctl_Close();
   printf("\nDone...\n");

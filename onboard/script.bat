@@ -1,4 +1,4 @@
-arm-none-linux-gnueabi-gcc -o compiled/v4l2_test1 v4l2_test/v4l2_test1.c
+arm-none-linux-gnueabi-gcc -o compiled/v4l2_test1 -O3 v4l2_test/v4l2_test1.c
 PAUSE
 
 FTP -v -i -s:ftpscript1.txt
@@ -15,8 +15,15 @@ FTP -v -i -s:ftpscript1.txt
   :: Send Stuff to be done
   ECHO.handler.SendKeys "cd /data/video~" >>temp_SendKeys.VBS
   ECHO.WScript.sleep 500 >>temp_SendKeys.VBS
+  :: Kill main process
   ECHO.handler.SendKeys "killall program.elf~" >>temp_SendKeys.VBS
   ECHO.WScript.sleep 500 >>temp_SendKeys.VBS
+  :: Enable USB Host
+  ECHO.handler.SendKeys "gpio 127 -d i~" >>temp_SendKeys.VBS
+  ECHO.WScript.sleep 500 >>temp_SendKeys.VBS
+  ECHO.handler.SendKeys "insmod dwc_otg.ko~" >>temp_SendKeys.VBS
+  ECHO.WScript.sleep 1500 >>temp_SendKeys.VBS
+  :: Run custom code
   ECHO.handler.SendKeys "chmod 777 /data/video/v4l2_test1~" >>temp_SendKeys.VBS
   ECHO.WScript.sleep 500 >>temp_SendKeys.VBS
   ECHO.handler.SendKeys "./v4l2_test1~" >>temp_SendKeys.VBS
