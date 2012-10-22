@@ -148,7 +148,7 @@ void* native_thread_main(void* data)
 			received_location.x = command.packet.transform[0];
 			received_location.y = command.packet.transform[1];
 			received_location.z = command.packet.transform[2];
-			received_location.yaw = command.packet.transform[3];
+			received_location.yaw = command.packet.transform[4];
 			
 			if(filter_pose(&received_location))
 			{

@@ -116,7 +116,7 @@ int main()
 	yaw.f = 0.0f;
 	
 	pose goal_location, waypoint_1, waypoint_2, waypoint_3, waypoint_4, current_location, correction;
-	waypoint_1.x = 0.0;	//right of kinect positive x
+	waypoint_1.x = 0.0;		//right of kinect positive x
 	waypoint_1.y = -0.3;	//below kinect positive y
 	waypoint_1.z = 0.0;		//in front of kinect positive z
 	waypoint_1.yaw = 0.0; 	//turning left of kinect positive yaw
