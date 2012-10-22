@@ -1,0 +1,1 @@
+arm-none-linux-gnueabi-g++.exe -o ../bin/horizontal_velocities -lpthread ../util/util.c ../video/video.c ../video/blocksum.c ../attitude/attitude.c ../attitude/ars.c ../navboard/navboard.c ../gpio/gpio.c horizontal_velocities.c main_horizontal_velocities.c

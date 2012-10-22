@@ -1,0 +1,1 @@
+arm-none-linux-gnueabi-g++.exe -o ../bin/video ../util/util.c blocksum.c video.c main_video.c

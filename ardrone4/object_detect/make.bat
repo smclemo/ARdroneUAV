@@ -1,0 +1,1 @@
+arm-none-linux-gnueabi-g++.exe -o ../bin/object_detect -lpthread ../util/util.c ../video/video.c object_detect.c main_object_detect.c

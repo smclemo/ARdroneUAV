@@ -1,0 +1,1 @@
+arm-none-linux-gnueabi-g++.exe -ftree-vectorize -mfpu=neon -mfloat-abi=softfp -lpthread -o fly -O3 at_cmds.c FAST/fast.c FAST/fast_9.c FAST/nonmax.c navdata.c util.c video.c main.c
