@@ -1,0 +1,25 @@
+This GIT repo contains all the work done on the ar.drone and ar.drone 2.0. 
+Please refer to the weekly journal on github and my final report in this folder for details.
+
+A few notes:
+
+- The "Scripts" folder contains scripts used to automate the process of uploading files to the drone via FTP, and running those files. 
+It works in Windows when connected to the drone via WIFI.
+
+_ The "FTPscripts" are part of the Scripts needed for the FTP transfer.
+
+- The "FINAL" folder contains all the code related to the end result of my project - the localisation against Kinect application.
+In there the jni folder contains work related to Winston's part - ask him if you are unsure about anything in there.
+The 'main' file is the key program file that runs on the drone. I think it is fairly self-explanatory.
+
+- The at_cmds needs to be updated to the latest SDK version from parrot, this may help with the issue where the hover mode goes crazy. 
+Also use the Parrot code to access the sensor data (not done in my project).
+
+- 'ardrone4' folder contains the most recent work done on replacing the firmware of the AR.Drone 2.0. To get this working you will 
+need to get the video DSP to perform the optical flow stabilisation. The datasheet for the DSP is online. 
+This code was adapted from 'dsk7' on github - check there for more up to date versions.
+
+Any issues let me know.
+
+Steven Clementson
+smclemo@msn.com

@@ -1,0 +1,12 @@
+open 192.168.1.1
+
+binary
+put ardrone4/bin/attitude
+put ardrone4/bin/fly
+put ardrone4/bin/gpio
+put ardrone4/bin/horizontal_velocities
+put ardrone4/bin/motorboard
+put ardrone4/bin/navboard
+put ardrone4/bin/vbat
+put ardrone4/bin/video
+bye
